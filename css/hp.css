@@ -63,6 +63,7 @@ body
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	color: #263238;
     min-width: 320px;
+    
     background-image: url(../img/background.jpg);
     background-position: bottom center;
     background-attachment: fixed;
@@ -77,7 +78,30 @@ body
     -o-background-size: cover;
     background-size: cover;    
 }
-
+body:after /* iOS fix */
+{
+    content: "";
+    z-index: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(../img/background.jpg);
+    background-position: bottom center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 hr 
 {
     margin: 50px auto;
@@ -105,6 +129,7 @@ header
     padding: 5px 15px;    
     color: #fff;
     position: relative;
+    z-index: 1;
 }
 header h1
 {
@@ -274,4 +299,3 @@ section .books .owl-controls .owl-dots .owl-dot.active
 .owl-carousel.owl-rtl { direction: rtl; }
 .owl-carousel.owl-rtl .owl-item { float: right; }
 .no-js .owl-carousel { display: block; }
-
