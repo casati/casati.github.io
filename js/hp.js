@@ -2,6 +2,11 @@ var hp = {};
 
 hp.init = function ()
 {
+    $(window).scroll(function() 
+    {
+        var scrolledY = $(window).scrollTop();
+        $("body").css("background-position", "center " + (scrolledY) + "px");
+    });
     $(".books-carousel").owlCarousel({
         loop: true,
         margin: 15,

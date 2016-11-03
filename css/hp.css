@@ -63,42 +63,16 @@ body
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	color: #263238;
     min-width: 320px;
-    /*
     background-image: url(../img/background.jpg);
     background-position: bottom center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; - not working on iOS! */
     background-repeat: no-repeat;
+    
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
     -o-background-size: cover;
     background-size: cover;    
-    */
-}
-.bg /* iOS fix */
-{
-    content: "";
-    z-index: -1;
-    display: block;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url(../img/background.jpg);
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-.page
-{
-    z-index: 2;
-    position: relative;
-    width: 100%;
 }
 
 hr 
@@ -123,12 +97,11 @@ a:active
 
 header 
 {
-    min-height: 100vh;
+    min-height: 100%;
     background: rgba(22, 24, 29, .75);
     padding: 5px 15px;    
     color: #fff;
     position: relative;
-    z-index: 1;
 }
 header h1
 {
@@ -298,3 +271,4 @@ section .books .owl-controls .owl-dots .owl-dot.active
 .owl-carousel.owl-rtl { direction: rtl; }
 .owl-carousel.owl-rtl .owl-item { float: right; }
 .no-js .owl-carousel { display: block; }
+
