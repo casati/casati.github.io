@@ -65,14 +65,12 @@ body
     min-width: 320px;
     background-image: url(../img/background.jpg);
     background-position: bottom center;
-    /* background-attachment: fixed; - not working on iOS! */
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat;    
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;    
+    background-size: cover;
 }
 
 hr 
@@ -98,10 +96,10 @@ a:active
 header 
 {
     min-height: 100%;
-    background: rgba(22, 24, 29, .75);
+    background-color: rgba(22, 24, 29, .75);
     padding: 5px 15px;    
     color: #fff;
-    position: relative;
+    position: relative;    
 }
 header h1
 {
@@ -150,7 +148,7 @@ section h1
 section h2
 {
     text-align: left;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 300;
     color: #607d8b;
     margin: 1em auto 1.5em auto;
