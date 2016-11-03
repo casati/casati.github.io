@@ -90,7 +90,7 @@ body:after /* iOS fix */
     left: 0;
     background-image: url(../img/background.jpg);
     background-position: bottom center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-repeat: no-repeat;
     -webkit-background-size: 100%; 
     -moz-background-size: 100%; 
