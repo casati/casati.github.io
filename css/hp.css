@@ -131,13 +131,14 @@ section
 {
     min-height: 98%;
     background: #fff;
-    padding: 50px 20px;
+    padding: 30px 0;
     margin-bottom: 50px;    
 }
 section .content
 {
     max-width: 800px;
     margin: 0 auto;
+    padding: 20px;
 }
 section h1
 {
@@ -170,6 +171,7 @@ section h4
 section p
 {
     font-size: 16px;
+    line-height: 1.3em;
     text-align: justify;
     margin: 1em 0;
 }
@@ -183,42 +185,57 @@ section ul
 {
     margin: 1em 0 1em 1em;
 }
-section ul.books li
+
+section .books
 {
-    clear: both;
+    background: #eceff1;
+    border-radius: 4px;
+    padding: 15px;    
 }
-section ul.books li .cover
-{
-    width: 20%;
-    max-width: 160px;
-    float: left;
-    margin-right: 5%;
-}
-section ul.books li .cover img
-{
+section .books .book
+{    
     width: 100%;
-    height: auto;
 }
-section ul.books li .info
+section .books .book .cover
 {
-    float: left;
-    width: 75%;    
+    display: block;
 }
-section ul.books li .info p
+section .books .book p
 {
-    margin: .2em 0;
-    font-size: .85em;
+    text-align: center;
+    font-size: .9em;
+    color: #546e7a;
 }
 
-section.special
+section .books .owl-controls
 {
-    color: #fff;
-    background: #03a9fa;
+    border-top: 1px solid #cfd8dc;
+    padding-top: 10px;    
 }
-section.special hr
+section .books .owl-controls .owl-dots
 {
-    border-color: #0277bd;
+    text-align: center;
 }
+section .books .owl-controls .owl-dots .owl-dot
+{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+    background: #b0bec5;
+    border-radius: 50%;
+    box-shadow: inset 1px 1px 3px 0 rgba(0,0,0,.3);
+}
+section .books .owl-controls .owl-dots .owl-dot:hover,
+section .books .owl-controls .owl-dots .owl-dot:active
+{
+    background: #01579b;    
+}
+section .books .owl-controls .owl-dots .owl-dot.active
+{
+    background: #03a9fa;    
+}
+
 
 /* Breakpoints */
 @media screen and (min-width: 768px) /* tablet */
@@ -234,3 +251,23 @@ section.special hr
     section p { font-size: 18px; }
     section p.description { font-size: 16px; }
 }
+
+/* Owl Courousel */
+.owl-carousel { display: none; width: 100%; -webkit-tap-highlight-color: transparent; position: relative; z-index: 1; }
+.owl-carousel .owl-stage { position: relative; -ms-touch-action: pan-Y; }
+.owl-carousel .owl-stage:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.owl-carousel .owl-stage-outer { position: relative; overflow: hidden; -webkit-transform: translate3d(0px, 0px, 0px); }
+.owl-carousel .owl-controls .owl-nav .owl-prev,
+.owl-carousel .owl-controls .owl-nav .owl-next,
+.owl-carousel .owl-controls .owl-dot { cursor: pointer; cursor: hand; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+.owl-carousel.owl-loaded { display: block; }
+.owl-carousel.owl-loading { opacity: 0; display: block; }
+.owl-carousel.owl-hidden { opacity: 0; }
+.owl-carousel .owl-refresh .owl-item { display: none; }
+.owl-carousel .owl-item { position: relative; min-height: 1px; float: left; -webkit-backface-visibility: hidden; -webkit-tap-highlight-color: transparent; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+.owl-carousel .owl-item img { display: block; width: 100%; -webkit-transform-style: preserve-3d; } .owl-carousel.owl-text-select-on .owl-item { -webkit-user-select: auto; -moz-user-select: auto; -ms-user-select: auto; user-select: auto; }
+.owl-carousel .owl-grab { cursor: move; cursor: -webkit-grab; cursor: -o-grab; cursor: -ms-grab; cursor: grab; }
+.owl-carousel.owl-rtl { direction: rtl; }
+.owl-carousel.owl-rtl .owl-item { float: right; }
+.no-js .owl-carousel { display: block; }
+

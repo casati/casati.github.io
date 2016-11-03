@@ -17,26 +17,30 @@
     <meta name="format-detection" content="telephone=no" />
     <meta http-equiv="cleartype" content="on">        
     
-    <link rel="apple-touch-icon" sizes="57x57" href="/img/icons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/img/icons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/img/icons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/img/icons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/img/icons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/img/icons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/img/icons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/img/icons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/img/icons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/img/icons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png">
-    <link rel="manifest" href="/img/icons/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+    <link rel="manifest" href="img/icons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/img/icons/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="img/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     
     <link rel="profile" href="http://microformats.org/profile/hcard" />
-    <link rel="stylesheet" href="css/hp.css">        
+    <link rel="stylesheet" href="css/hp.css">
+    
+    <script src="js/libs.js"></script>
+    <script src="js/hp.js"></script>
+    
 </head>
 <body>
     
@@ -103,69 +107,30 @@
         <div class="content">
             <h1>Pubblicazioni</h1>
             <hr>
-            <p>Sono stato docente in corsi di formazione superiore in ambito informatico e ho all'attivo diversi progetti editoriali, sia come autore che come technical proofreader che come revisore.</p>
-            <ul class="books">
-                <li>
-                    <p>Coautore di:</p>
-                    <div class="cover"><img src="img/cover-html5-espresso.jpg" alt="HTML5 con CSS3 e ECMAScript 5 - Espresso" /></div>
-                    <div class="info">
-                        <h4>HTML5 con CSS3 e ECMAScript 5 - Espresso</h4>                        
-                        <p>di Daniele Bochicchio, <strong>Matteo Casati</strong>, Cristian Civera, Riccardo Golia, Stefano Mostarda</p>
-                        <p>Edito da Hoepli, luglio 2011</p>
-                        <p>Lingua: italiano, 262 pagine</p>
-                        <p>
-                            ISBN-10: 8820348039<br />
-                            ISBN-13: 978-8820348038
-                        </p>
-                    </div>                                    
-                </li>
-
-                <li>
-                    <p>Technical Proofreader di:</p>
-                    <div class="cover"><img src="img/cover-aspnet-in-practice.jpg" alt="ASP.NET 4.0 in Practice" /></div>
-                    <div class="info">
-                        <h4>ASP.NET 4.0 in Practice</h4>
-                        <p>di Daniele Bochicchio, Stefano Mostarda, Marco De Sanctis</p>
-                        <p>Edito da Manning, maggio 2011</p>
-                        <p>Lingua: inglese, 504 pagine</p>
-                        <p>
-                            ISBN-10: 1935182463<br />
-                            ISBN-13: 978-1935182467
-                        </p>
+            <p>Sono stato docente in corsi di formazione superiore in ambito informatico e ho all'attivo diversi progetti editoriali, sia come autore che come technical proofreader che come revisore.</p>            
+            <div class="books">
+                <div class="books-carousel">
+                    <div class="book">                
+                        <img class="cover" src="img/cover-html5-espresso.jpg" alt="HTML5 con CSS3 e ECMAScript 5 - Espresso" />
+                        <p>Coautore</p>                
                     </div>
-                </li>
-                <li>
-                    <p>Revisore della versione italiana di:</p>    
-                    <div class="cover"><img src="img/cover-aspnet4.jpg" alt="ASP.NET 4.0 in C# e VB" /></div>
-                    <div class="info">
-                        <h4>ASP.NET 4.0 in C# e VB</h4>
-                        <p>di Bill Evjen, Scott Hanselman, Devin Rader</p>
-                        <p>Edito da Hoepli, agosto 2010</p>
-                        <p>Lingua: italiano, 1392 pagine</p>
-                        <p>
-                            ISBN-10: 8820345536<br />
-                            ISBN-13: 978-8820345532
-                        </p>
+                    <div class="book">                
+                        <div><img class="cover" src="img/cover-aspnet-in-practice.jpg" alt="ASP.NET 4.0 in Practice" /></div>
+                        <p>Technical Proofreader</p>                
                     </div>
-                </li>
-                <li>
-                    <p>Revisore della versione italiana di:</p>    
-                    <div class="cover"><img src="img/cover-csharp4.jpg" alt="C# 4 E .NET 4" /></div>
-                    <div class="info">
-                        <h4>C# 4 E .NET 4</h4>
-                        <p>di Christian Nagel, Bill Evjen, Jay Glynn, Karli Watson, Morgan Skinner</p>
-                        <p>Edito da Hoepli, ottobre 2010</p>
-                        <p>Lingua: italiano, 1472  pagine</p>
-                        <p>
-                            ISBN-10: 8820345609<br />
-                            ISBN-13: 978-8820345600
-                        </p>
+                    <div class="book">
+                        <div class="cover"><img class="cover" src="img/cover-aspnet4.jpg" alt="ASP.NET 4.0 in C# e VB" /></div>
+                        <p>Revisore della versione italiana</p>                
                     </div>
-                </li>
-            </ul>
-        </div>
+                    <div class="book">                
+                        <img class="cover" src="img/cover-csharp4.jpg" alt="C# 4 E .NET 4" />
+                        <p>Revisore della versione italiana</p>
+                    </div>
+                </div>
+            </div>
+        </div>            
     </section>
-    <section class="specialX">
+    <section>
         <div class="content">
             <h1>Contatti</h1>
             <hr>
@@ -202,9 +167,7 @@
     </footer>
     <script>
         
-        //
-        // TODO: hp.init();
-        //
+        hp.init();
         
         // Google Analytics
         var _gaq = _gaq || [];
