@@ -59,6 +59,15 @@ article h3
     color: #909090;
     text-align: center;
 }
+article h4
+{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2em;
+    margin: 2.5em 0 -.5em 0;
+    color: #007cc2;
+    text-align: left;
+}
 article p
 {
     font-size: 16px;
@@ -568,6 +577,7 @@ footer .box.about .info .item.icon.email
     border: 1px solid #007cc2;
     border-radius: 3px;
     font-weight: 600;
+    white-space: nowrap;
 }
 .page.home section.iot .box.text a:hover,
 .page.home section.iot .box.text a:active
@@ -681,7 +691,7 @@ footer .box.about .info .item.icon.email
 }
 .page.contacts header section 
 {
-    background-image: url(../img/header-contacts.jpg);      
+    background-image: url(../img/header-contacts.jpg); 
 }
 
 
@@ -719,6 +729,10 @@ footer .box.about .info .item.icon.email
     article h3
     {
         font-size: 28px;        
+    }
+    article h4
+    {
+        font-size: 22px;        
     }
     article p,
     article li
