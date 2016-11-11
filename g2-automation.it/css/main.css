@@ -109,7 +109,7 @@ hr.break
     100% { opacity: 0; top: 26px; }
 }
 
-/* header */
+/* Header */
 header { position: relative; }
 header nav 
 {
@@ -216,7 +216,7 @@ header section
     overflow: hidden;
 }
 
-/* footer */
+/* Footer */
 footer
 {    
     width: 100%;
@@ -287,19 +287,6 @@ footer .copyright p
     text-align: center;
     color: #777;
 }
-
-
-/*
-footer .box.about .info
-{
-    min-height: 60px;
-    background-position: left top;
-    background-repeat: no-repeat;
-    background-size: 40px auto;
-    background-image: url(../img/g2-logo-white.png);
-    padding-left: 60px;
-}
-*/
 footer .box.about .info .item
 {
     color: #fff;
@@ -346,6 +333,7 @@ footer .box.about .info .item.icon.email
 }
 .page.home header section video
 {
+    display: none;
     object-fit: cover;
     object-position: right center;
     width: 100%; 
@@ -727,6 +715,10 @@ footer .box.about .info .item.icon.email
         width: 50%;
     }
     
+    .page.home header section video
+    {
+        display: block;
+    }
     .page.home header section .claim h1
     {
         font-size: 70px;        
