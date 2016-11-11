@@ -40,7 +40,17 @@ body
     -o-background-size: cover;
     background-size: cover;
 }
-
+a.link
+{
+    color: #007cc2;
+    text-decoration: none;
+    font-weight: 600;
+}
+a.link:hover,
+a.link:active
+{
+    text-decoration: underline;
+}
 ul, ol
 {
     list-style: none;
@@ -49,6 +59,14 @@ ul, ol
 article
 {
     padding: 20px;
+}
+article h2
+{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5em;
+    margin: 1.5em 0 0 0;
+    color: #222;
 }
 article h3
 {
@@ -66,7 +84,6 @@ article h4
     line-height: 1.2em;
     margin: 2.5em 0 -.5em 0;
     color: #007cc2;
-    text-align: left;
 }
 article p
 {
@@ -726,6 +743,10 @@ footer .box.about .info .item.icon.email
 
 @media screen and (min-width: 768px) /* tablet */
 {
+    article h2
+    {
+        font-size: 24px;        
+    }
     article h3
     {
         font-size: 28px;        
