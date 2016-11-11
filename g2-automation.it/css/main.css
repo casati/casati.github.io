@@ -46,6 +46,38 @@ ul, ol
     list-style: none;
 }
 
+article
+{
+    padding: 20px;
+}
+article h3
+{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5em;
+    margin: 1.5em 0;
+    color: #909090;
+    text-align: center;
+}
+article p
+{
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 1.5em 0;
+    text-align: justify;
+}
+article ul
+{
+    margin: 1em 2em;
+    list-style: square;
+}
+article ul li
+{
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: .5em 0;
+}
+
 hr.break 
 {
     margin: 30px auto;
@@ -209,12 +241,36 @@ header nav ul.menu ul.dropdown-menu li a
 header section 
 {
     background: #f5f5f5;
-    height: 400px;
+    height: 300px;
+    padding: 20px;
     margin-top: 60px;
     width: 100%;
-    height: 400px;
     overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
 }
+header section .title
+{
+    background-color: rgba(0,0,0,.4);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;    
+}
+header section .title .content h1
+{
+    padding: 100px 20px;
+    color: #fff;
+    font-size: 42px;
+    font-weight: 300;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.5);
+    text-align: center;
+}
+
+
 
 /* Footer */
 footer
@@ -325,11 +381,19 @@ footer .box.about .info .item.icon.email
 /* Home Page */
 .page.home header section 
 {
-    background-image: url(../img/header-hp.jpg); 
-    background-repeat: no-repeat;
     background-position: right center;
-    background-size: cover;
-    position: relative;  
+    background-image: url(../img/header-hp.jpg); 
+    height: 400px;
+}
+.page.home header section .title .content
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -moz-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
 }
 .page.home header section video
 {
@@ -344,35 +408,6 @@ footer .box.about .info .item.icon.email
     bottom: 0;
     left: 0;
 }
-.page.home header section .claim
-{
-    background-color: rgba(0,0,0,.2);
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;    
-}
-.page.home header section .claim .content
-{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translateY(-50%) translateX(-50%);
-    -moz-transform: translateY(-50%) translateX(-50%);
-    -ms-transform: translateY(-50%) translateX(-50%);
-    transform: translateY(-50%) translateX(-50%);
-}
-.page.home header section .claim h1
-{
-    padding: 20px;
-    color: #fff;
-    font-size: 42px;
-    font-weight: 300;
-    text-shadow: 1px 1px 2px rgba(0,0,0,.5);
-    text-align: center;
-}
-
 .page.home section.automation
 {
     background: #007cc2;
@@ -623,6 +658,33 @@ footer .box.about .info .item.icon.email
     width: 100%;
 }
 
+/* Other pages */
+.page.about header section 
+{
+    background-image: url(../img/header-about.jpg);      
+}
+.page.electrical-design header section 
+{
+    background-image: url(../img/header-electrical-design.jpg);      
+}
+.page.software-design header section 
+{
+    background-image: url(../img/header-software-design.jpg);      
+}
+.page.production header section 
+{
+    background-image: url(../img/header-production.jpg);      
+}
+.page.iotly header section 
+{
+    background-image: url(../img/header-iotly.jpg);      
+}
+.page.contacts header section 
+{
+    background-image: url(../img/header-contacts.jpg);      
+}
+
+
 /* Breakpoints */
 @media screen and (min-width: 320px) and (max-width: 767px) /* phone only */
 {
@@ -654,6 +716,15 @@ footer .box.about .info .item.icon.email
 
 @media screen and (min-width: 768px) /* tablet */
 {
+    article h3
+    {
+        font-size: 28px;        
+    }
+    article p,
+    article li
+    {
+        font-size: 20px !important;
+    }
     header nav
     {
         height: 80px;
@@ -711,6 +782,10 @@ footer .box.about .info .item.icon.email
     {
         margin-top: 80px;
     }
+    header section .title h1
+    {
+        font-size: 70px !important;        
+    }
     footer .box
     {
         width: 50%;
@@ -720,10 +795,7 @@ footer .box.about .info .item.icon.email
     {
         display: block;
     }
-    .page.home header section .claim h1
-    {
-        font-size: 70px;        
-    }
+    
     .page.home section.automation .box
     {
         width: 33.333%;
