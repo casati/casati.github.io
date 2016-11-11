@@ -355,13 +355,12 @@ footer .box.about .info .item.icon.email
 }
 .page.home header section .claim .content
 {
-    position: relative;
+    position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    border: 1px solid red;
 }
 .page.home header section .claim h1
 {
