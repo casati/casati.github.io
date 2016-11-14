@@ -696,7 +696,8 @@ footer .box.about .info .item.icon.email
 }
 .page.software-design header section 
 {
-    background-image: url(../img/header-software-design.jpg);      
+    background-image: url(../img/header-software-design.jpg);  
+    background-position: bottom center;
 }
 .page.production header section 
 {
