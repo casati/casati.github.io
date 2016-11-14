@@ -27,24 +27,15 @@ body
 	-webkit-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    -webkit-touch-callout: none;
-	-webkit-user-select: none;
-	user-select: none;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
-	color: #333;
-    background-position: bottom center;
-    background-repeat: no-repeat;    
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    color: #333;
+    
 }
 a.link
 {
     color: #007cc2;
     text-decoration: none;
     font-weight: 600;
+    line-height: inherit;
 }
 a.link:hover,
 a.link:active
@@ -56,6 +47,18 @@ ul, ol
     list-style: none;
 }
 
+section.gallery
+{
+    position: relative;
+    width: 100%;    
+    padding-bottom: 50px;
+    font-size: 0;
+    text-align: center;
+}
+section.gallery img
+{
+    max-width: 100%;
+}
 article
 {
     padding: 20px;
@@ -535,15 +538,11 @@ footer .box.about .info .item.icon.email
 .page.home section.iot h2
 {
     margin: 20px;
-    font-size: 60px;
-    font-weight: 600;
-    text-align: center;
-    color: #007cc2;
+    text-align: center;    
 }
-.page.home section.iot h2 sup
+.page.home section.iot h2 img
 {
-    font-size: 22px;
-    line-height: 70px;
+    width: 200px;
 }
 .page.home section.iot .wrapper
 {
@@ -699,6 +698,14 @@ footer .box.about .info .item.icon.email
     background-image: url(../img/header-software-design.jpg);  
     background-position: bottom center;
 }
+.page.software-design section.gallery .box 
+{
+    display: inline-block;
+    width: 50%;
+    padding: 5px;
+    text-align: center;
+}
+
 .page.production header section 
 {
     background-image: url(../img/header-production.jpg);      
@@ -707,20 +714,70 @@ footer .box.about .info .item.icon.email
 {
     background-image: url(../img/header-iotly.jpg);      
 }
-.page.iotly section article
+.page.iotly section.gallery 
 {
-    padding-bottom: 0;
+    padding: 20px 5px 0 5px;
 }
-.page.iotly section article fig img
+.page.iotly section.gallery a.button
+{    
+    background-color: #222;
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 15px 65px 15px 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.6);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -moz-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);    
+}
+.page.iotly section.gallery a.button:after
 {
-    width: 100%;
-    margin-top: 20px;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;    
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 30px auto;
+    background-image: url(../img/ico-arrow-right.png);
 }
-
+.page.iotly section.gallery a.button:hover,
+.page.iotly section.gallery a.button:active
+{
+    background-color: #007cc2;
+}
 .page.contacts header section 
 {
     background-image: url(../img/header-contacts.jpg); 
 }
+.page.contacts section article .contact-info
+{
+    font-size: 0;
+    padding: 20px 0;
+}
+.page.contacts section article .contact-info .box
+{
+    display: inline-block;
+    width: 100%;
+}
+.page.contacts section article .contact-info .box.map
+{
+    padding: 5px;
+    background: #f8f8f8;
+    border-radius: 4px;
+    border: 1px solid #ececec;
+}
+
 
 
 /* Breakpoints */
@@ -870,6 +927,16 @@ footer .box.about .info .item.icon.email
     .page.home section.team .vcard
     {
         width: 25%;        
+    }
+    
+    .page.software-design section.gallery .box 
+    {
+        width: 25%;        
+    }
+    
+    .page.contacts section article .contact-info .box
+    {
+        width: 50%;
     }
 }
 
