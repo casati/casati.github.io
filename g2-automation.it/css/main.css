@@ -270,8 +270,6 @@ header nav ul.menu ul.dropdown-menu li a
 header section 
 {
     background: #f5f5f5;
-    height: 300px;
-    padding: 20px;
     margin-top: 60px;
     width: 100%;
     overflow: hidden;
@@ -283,22 +281,21 @@ header section
 header section .title
 {
     background-color: rgba(0,0,0,.4);
-    position: absolute;
+    position: relative;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;    
 }
-header section .title .content h1
+header section .title h1
 {
-    padding: 100px 20px;
+    padding: 70px 20px;
     color: #fff;
     font-size: 42px;
     font-weight: 300;
     text-shadow: 1px 1px 2px rgba(0,0,0,.5);
     text-align: center;
 }
-
 
 
 /* Footer */
@@ -412,17 +409,7 @@ footer .box.about .info .item.icon.email
 {
     background-position: right center;
     background-image: url(../img/header-hp.jpg); 
-    height: 400px;
-}
-.page.home header section .title .content
-{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translateY(-50%) translateX(-50%);
-    -moz-transform: translateY(-50%) translateX(-50%);
-    -ms-transform: translateY(-50%) translateX(-50%);
-    transform: translateY(-50%) translateX(-50%);
+    
 }
 .page.home header section video
 {
@@ -430,7 +417,7 @@ footer .box.about .info .item.icon.email
     object-fit: cover;
     object-position: right center;
     width: 100%; 
-    height: 400px; 
+    height: 500px;
     position: absolute;
     top: 0;
     right: 0;
@@ -885,6 +872,11 @@ footer .box.about .info .item.icon.email
     {
         margin-top: 80px;
     }
+    header section .title h1
+    {
+        padding: 150px 20px;    
+    }
+
     header section .title h1
     {
         font-size: 70px !important;        
