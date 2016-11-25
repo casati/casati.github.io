@@ -44,9 +44,34 @@
     <script src="js/core.js"></script>
     
 </head>
-<body>    
+<body>   
+    <header>
+        <nav>
+            <div class="content">
+                <a href="index.html" class="logo"><img src="img/g2-logo.png" alt="G2"></a>
+                <a href="javascript:;" class="toggle-menu">Menu</a>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Chi siamo</a></li>
+                    <li>
+                        <a href="javascript:;" class="more">Cosa facciamo</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="electrical-design.html">Progettazione elettrica</a></li>
+                            <li><a href="software-design.html">Progettazione software</a></li>
+                            <li><a href="production.html">Produzione</a></li>
+                            <li><a href="iotly.html">Industria 4.0</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contacts.html">Contatti</a></li>
+                    <li><a href="#" class="language it current" title="Italiano">Italiano</a></li>
+                    <li><a href="#" class="language en" title="English">English</a></li>
+                </ul>
+            </div>
+        </nav>        
+    </header>
     <div class="page home">
         <header>
+<!--
             <nav>
                 <div class="content">
                     <a href="index.html" class="logo"><img src="img/g2-logo.png" alt="G2"></a>
@@ -69,8 +94,9 @@
                     </ul>
                 </div>
             </nav>
+-->
             <section>
-                <video autoplay loop poster="img/header-hp.jpg" src="img/header-hp.mp4"></video>
+                <video autoplay loop poster="img/header-hp.jpg" src="img/header-hp.mp4" muted></video>
                 <div class="title">
                     <div class="content">
                          <h1>G2, automazione per l'Industria 4.0</h1>
@@ -87,7 +113,7 @@
                     <a href="electrical-design.html">
                         <span class="ico electrical-design"></span>
                         <h2>Progettazione elettrica</h2>
-                        <p>Ci occupiamo, da oltre quarant’anni, di progettazione di sistemi di comando per l'automazione di macchine e di impianti, di quadri di potenza e di distribuzione dell'energia. Siamo attivi nel campo della lavorazione plastica in quello delle presse e delle caldaie.</p>
+                        <p>Ci occupiamo, da oltre quarant’anni, di progettazione di sistemi di comando per l'automazione di macchine e di impianti, di quadri di potenza e di distribuzione dell'energia. Siamo attivi nel campo della lavorazione plastica e in quello delle presse e delle caldaie.</p>
                     </a>
                 </div>
                 <div class="box">
@@ -144,58 +170,59 @@
                 <hr class="break">
                 <div class="people">
                     <div class="vcard">
-                        <img src="img/people1.jpg">
+                        <img src="img/team-giosue.jpg">
                         <div class="description">
-                            <p class="name">Rino<br>Ghioldi</p>
-                            <p class="role">"The Boss"</p>
+                            <p class="name">Giosuè Ghioldi</p>
+                            <p class="role">President</p>
                         </div>
                     </div>
                     <div class="vcard">
-                        <img src="img/people2.jpg">
+                        <img src="img/team-cristina.jpg">
                         <div class="description">
-                            <p class="name">Cristina<br>Ghioldi</p>
-                            <p class="role">Comunicazione</p>
+                            <p class="name">Cristina Ghioldi</p>
+                            <p class="role">CEO</p>
                         </div>
                     </div>
                     <div class="vcard">
-                        <img src="img/people3.jpg">
+                        <img src="img/team-giuseppe.jpg">
                         <div class="description">
-                            <p class="name">Giuseppe<br>Giardina</p>
-                            <p class="role">Direttore esecutivo</p>
+                            <p class="name">Giuseppe Giardina</p>
+                            <p class="role">General Director</p>
                         </div>
                     </div>                    
                 </div>
-                <img class="full-team" src="img/team.png">
+                <img class="full-team" src="img/team.jpg">
             </div>
         </section>
-        <footer>
-            <div class="content">
-                <section class="box about">
-                    <h2>G2 di Ghioldi srl</h2>
-                    <div class="info">
-                        <div class="item">
-                            Via Caduti della Liberazione, 55<br>
-                            21040 - Uboldo (VA)
-                        </div>                        
-                        <a class="item icon phone" href="tel:+390296780783">+39 02 96.78.07.83</a>
-                        <span class="item icon fax">+39 02 96.78.96.58</span>
-                        <a class="item icon email" href="mailto:automation@g2team.it">automation@g2team.it</a>
-                        <span class="item">P.I. 00745920124</span>
-                    </div>
-                </section>
-                <section class="box certifications">
-                    <h2>Certificazioni</h2>
-                    <p>La progettazione avviene conformemente alle attuali normative di sicurezza (EN ISO 13849-1 e EN IEC 62061) e di riferimento internazionali, IEC; G2 è in grado di affrontare progetti anche secondo le normative canadesi CSA o americane UL (<a class="link" href="doc/CERTIFICATO_UL508A_CSAC22_2_28_July.pdf" target="_blank">Certificato n° 5001719</a> rilasciato da INTERTEK)</p>
-                    <img src="img/certifications.png">
-                </section>
-                <section class="copyright">
-                    <p>Copyright © 2016 - Tutti i diritti riservati.</p>
-                    <p>iotly<sup>&reg;</sup> è un marchio registrato da G2 di GHIOLDI srl</p>
-                    <p>Tutti i marchi sono dei rispettivi proprietari.</p>
-                </section>
-            </div>
-        </footer>        
-    </div>    
+                
+    </div>
+    <footer>
+        <div class="content">
+            <section class="box about">
+                <h2>G2 di Ghioldi srl</h2>
+                <div class="info">
+                    <div class="item">
+                        Via Caduti della Liberazione, 55<br>
+                        21040 - Uboldo (VA)
+                    </div>                        
+                    <a class="item icon phone" href="tel:+390296780783">+39 02 96.78.07.83</a>
+                    <span class="item icon fax">+39 02 96.78.96.58</span>
+                    <a class="item icon email" href="mailto:automation@g2team.it">automation@g2team.it</a>
+                    <span class="item">P.I. 00745920124</span>
+                </div>
+            </section>
+            <section class="box certifications">
+                <h2>Certificazioni</h2>
+                <p>La progettazione avviene conformemente alle attuali normative di sicurezza (EN ISO 13849-1 e EN IEC 62061) e di riferimento internazionali, IEC; G2 è in grado di affrontare progetti anche secondo le normative canadesi CSA o americane UL (<a class="link" href="doc/ul508a_csac22_5001719.pdf" target="_blank">Certificato n° 5001719</a> rilasciato da INTERTEK)</p>
+                <img src="img/certifications.png">
+            </section>
+            <section class="copyright">
+                <p>Copyright © 2016 - Tutti i diritti riservati.</p>
+                <p>iotly<sup>&reg;</sup> è un marchio registrato da G2 di GHIOLDI srl</p>
+                <p>Tutti i marchi sono dei rispettivi proprietari.</p>
+            </section>
+        </div>
+    </footer>
     <script>        
         //
         // TODO: Google Analytics

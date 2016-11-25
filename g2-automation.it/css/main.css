@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,600');
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
@@ -16,8 +16,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     box-sizing: border-box;
     vertical-align: top; 
     text-align: left; 
-    font-family: "Raleway", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
-    line-height: 1.3em;
+    font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
 }
 html, body { height: 100%; width: 100%; }
 body 
@@ -28,6 +27,7 @@ body
     -moz-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     color: #333;
+    min-width: 320px;
     
 }
 a.link
@@ -58,7 +58,8 @@ section.gallery
 }
 section.gallery img
 {
-    max-width: 100%;
+    max-width: 98%;
+    margin: 0 1%;
 }
 
 .owl-carousel { display: none; width: 100%; -webkit-tap-highlight-color: transparent; position: relative; z-index: 1; }
@@ -80,29 +81,41 @@ section.gallery img
 .owl-carousel.owl-rtl .owl-item { float: right; }
 .no-js .owl-carousel { display: block; }
 
-section.gallery .carousel
+section .carousel
 { 
+    width: 100%;    
+}
+section .carousel .item
+{
+    margin: 0px;
+}
+section .carousel .item img
+{
+    display: block;
     width: 100%;
+    height: auto;
 }
-section.gallery .carousel .item
+section .carousel .item figcaption
 {
-    margin: 5px;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.4em;
+    padding: 10px;
+    color: #707070;
+    text-align: center;
+    margin-top: 5px;
 }
-section.gallery .carousel .item img
+section .carousel .owl-controls
 {
-  display: block;
-  width: 100%;
-  height: auto;
+    border-top: 1px solid #ececec;
+    padding-top: 10px;
 }
-section.gallery .carousel .owl-controls
-{
-    margin: 5px 0;
-}
-section.gallery .carousel .owl-controls .owl-dots
+section .carousel .owl-controls .owl-dots
 {
     text-align: center;
 }
-section.gallery .carousel .owl-controls .owl-dots .owl-dot
+section .carousel .owl-controls .owl-dots .owl-dot
 {
     display: inline-block;
     width: 12px;
@@ -112,14 +125,14 @@ section.gallery .carousel .owl-controls .owl-dots .owl-dot
     border-radius: 50%;
     box-shadow: inset 1px 1px 3px 0 rgba(0,0,0,.3);
 }
-section.gallery .carousel .owl-controls .owl-dots .owl-dot:hover,
-section.gallery .carousel .owl-controls .owl-dots .owl-dot:active
+section .carousel .owl-controls .owl-dots .owl-dot:hover,
+section .carousel .owl-controls .owl-dots .owl-dot:active
 {
     background: #007cc2;  
     border: 2px solid #fff;
     box-shadow: 0 0 0 2px #007cc2;
 }
-section.gallery .carousel .owl-controls .owl-dots .owl-dot.active
+section .carousel .owl-controls .owl-dots .owl-dot.active
 {
     background: #007cc2;    
 }
@@ -130,28 +143,28 @@ article
 }
 article h2
 {
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 100;
     line-height: 1.5em;
-    margin: 1.5em 0 0 0;
-    color: #222;
+    margin: 1.5em 0;
+    color: #888;
+    text-align: center;
 }
 article h3
 {
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 1.5em;
-    margin: 1.5em 0;
-    color: #909090;
-    text-align: center;
-}
-article h4
-{
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 600;
     line-height: 1.2em;
     margin: 2.5em 0 -.5em 0;
-    color: #007cc2;
+    color: #555;
+}
+article h4
+{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2em;
+    margin: 1.5em 0 -.5em 0;
+    color: #777;
 }
 article p
 {
@@ -345,7 +358,7 @@ header section
 }
 header section .title
 {
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0,0,0,.3);
     position: relative;
     top: 0;
     right: 0;
@@ -357,11 +370,10 @@ header section .title h1
     padding: 70px 20px;
     color: #fff;
     font-size: 42px;
-    font-weight: 300;
+    font-weight: 100;
     text-shadow: 1px 1px 2px rgba(0,0,0,.5);
     text-align: center;
 }
-
 
 /* Footer */
 footer
@@ -418,7 +430,7 @@ footer .box.certifications img
     display: block;
     height: auto;
     max-width: 300px;
-    opacity: .3;
+    opacity: .8;
 }
 footer .copyright
 {
@@ -472,15 +484,19 @@ footer .box.about .info .item.icon.email
 /* Home Page */
 .page.home header section 
 {
-    background-position: right center;
+    background-position: center center;
     background-image: url(../img/header-hp.jpg); 
     
+}
+.page.home header section .title
+{
+    background-color: transparent;
 }
 .page.home header section video
 {
     display: none;
     object-fit: cover;
-    object-position: right center;
+    object-position: center center;
     width: 100%; 
     height: 500px;
     position: absolute;
@@ -545,7 +561,7 @@ footer .box.about .info .item.icon.email
 {
     text-align: center;
     font-size: 24px;    
-    font-weight: 600;
+    font-weight: 400;
     margin: 25px 0;
 }
 .page.home section.automation .box p
@@ -699,6 +715,7 @@ footer .box.about .info .item.icon.email
     padding: 5px;
     font-size: 0;  
     margin-bottom: 30px;
+    border-bottom: 1px solid #ececec;
 }
 .page.home section.team .vcard
 {
@@ -713,8 +730,7 @@ footer .box.about .info .item.icon.email
 }
 .page.home section.team .vcard .description
 {
-    padding: 10px; 
-    background: #ececec;    
+    padding: 10px;       
 }
 .page.home section.team .vcard .description .name
 {
@@ -741,10 +757,12 @@ footer .box.about .info .item.icon.email
 {
     background-image: url(../img/header-about.jpg);      
 }
+
 .page.electrical-design header section 
 {
     background-image: url(../img/header-electrical-design.jpg);      
 }
+
 .page.software-design header section 
 {
     background-image: url(../img/header-software-design.jpg);  
@@ -762,22 +780,29 @@ footer .box.about .info .item.icon.email
 {
     background-image: url(../img/header-production.jpg);      
 }
+
 .page.iotly header section 
 {
     background-image: url(../img/header-iotly.jpg);      
 }
+.page.iotly img.logo
+{
+    display: block;    
+    width: 200px;
+    margin: 10px auto 30px auto;
+}
 .page.iotly section.gallery 
 {
-    padding: 20px 5px 0 5px;
+    padding: 20px 0 0 0;
 }
 .page.iotly section.gallery a.button
 {    
-    background-color: #222;
+    background-color: rgba(0,0,0,.8);
     color: #fff;
     text-decoration: none;
     font-size: 22px;
     font-weight: 600;
-    padding: 15px 65px 15px 30px;
+    padding: 20px 70px 20px 40px;
     line-height: 30px;
     border-radius: 5px;
     border: 2px solid #fff;
@@ -808,14 +833,18 @@ footer .box.about .info .item.icon.email
 {
     background-color: #007cc2;
 }
+
 .page.contacts header section 
 {
     background-image: url(../img/header-contacts.jpg); 
 }
 .page.contacts section article .contact-info
 {
-    font-size: 0;
-    padding: 20px 0;
+    font-size: 0;    
+}
+.page.contacts section article .contact-info h3
+{
+    margin-top: 20px;    
 }
 .page.contacts section article .contact-info .box
 {
@@ -864,15 +893,15 @@ footer .box.about .info .item.icon.email
 {
     article h2
     {
-        font-size: 24px;        
+        font-size: 36px;        
     }
     article h3
     {
-        font-size: 28px;        
+        font-size: 26px;        
     }
     article h4
     {
-        font-size: 22px;        
+        font-size: 24px;        
     }
     article p,
     article li
@@ -939,12 +968,13 @@ footer .box.about .info .item.icon.email
     header section .title h1
     {
         padding: 150px 20px;    
-    }
-
-    header section .title h1
-    {
         font-size: 70px !important;        
     }
+    section .carousel .item figcaption
+    {
+        font-size: 16px;        
+    }
+
     footer .box
     {
         width: 50%;
@@ -994,6 +1024,10 @@ footer .box.about .info .item.icon.email
         width: 25%;        
     }
     
+    .page.contacts section article .contact-info
+    {
+        padding: 20px 0;
+    }
     .page.contacts section article .contact-info .box
     {
         width: 50%;
