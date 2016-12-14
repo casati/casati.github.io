@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Test ADV</title>
 
-    <script type="text/javascript" src="https://acdn.adnxs.com/prebid/not-for-prod/prebid.js" async></script>
+    <script type="text/javascript" src="http://acdn.adnxs.com/prebid/not-for-prod/prebid.js" async></script>
 <!--
     <script type="text/javascript" src="http://ads.rubiconproject.com/hbms/13420.js" async></script>
     <script type="text/javascript" src="//acdn.adnxs.com/prebid/not-for-prod/prebid.js" async></script>
@@ -28,7 +28,17 @@
                 bidder: 'appnexus',
                 params: { placementId: '4799418' } // 234235 || 4799418
             },
-            
+
+                {
+    bidder: "rubicon", // chatta
+    params: 
+    {
+        accountId: "13420",
+        siteId: "57282",
+        zoneId: "378446",
+        sizes: [15]
+    }
+},
 {
     bidder: "rubicon", // aranzulla
     params: 
