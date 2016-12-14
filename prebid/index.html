@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Test ADV</title>
+    
+    <script type="text/javascript" src="http://acdn.adnxs.com/prebid/not-for-prod/prebid.js" async></script>
+
+<!--    <script type="text/javascript" src="prebid_rubicon.js" async></script>-->
+</head>
+<body>
+    
+    <div id="adv-container">Bid Response</div>
+    <script>
+        
+    var pbjs = pbjs || {};
+    pbjs.que = pbjs.que || [];
+
+    pbjs.que.push(function() {
+        var adUnits = [{
+          code: "adv-container", //div-gpt-ad-1438287399331-0",
+          sizes: [[300, 250], [300, 600]],
+          bids: [
+          
+            {
+                bidder: 'appnexus',
+                params: { placementId: '4799418' } // 234235 || 4799418
+            },
+            {
+                bidder: 'appnexus',
+                params: { placementId: '234235' } // 234235
+            }
+
+          ]
+        }];
+        pbjs.addAdUnits(adUnits);
+        pbjs.requestBids({
+            // This callback gets triggered when all bids for this
+            // ad unit come back. 
+            bidsBackHandler: function(bidResponses) {
+                var targetingParams = pbjs.getAdserverTargeting();
+                var container = document.getElementById('adv-container');
+                container.innerHTML = JSON.stringify(targetingParams);
+            }
+        });
+    });
+</script>
+    
+<!--
+{
+    bidder: "rubicon", // chatta
+    params: 
+    {
+        accountId: "13420",
+        siteId: "57282",
+        zoneId: "378446",
+        sizes: [15]
+    }
+}
+-->
+    
+</body>
+</html>
