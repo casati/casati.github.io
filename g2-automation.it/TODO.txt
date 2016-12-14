@@ -1,7 +1,0 @@
-- robots.txt
-- meta keywords & description
-- Google Analytics
-- cookie policy?
-- privacy policy?
-- email in footer: automation@g2team.it
-- copyright in footer
