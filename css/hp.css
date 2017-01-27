@@ -126,6 +126,54 @@ header .content
     border: 1px dotted blue;
     font-size: 16px;
 }
+
+.icon-scroll
+{
+    display: block;
+    border: 2px solid #bbb;
+    width: 24px;
+    height: 42px;
+    border-radius: 12px;
+    margin: 20px auto;
+    position: relative;
+}
+.icon-scroll:before
+{
+    content: '';
+    width: 6px;
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    z-index: 2;
+    background-color: #bbb;
+    margin-left: -3px;
+    top: 6px;  
+    border-radius: 4px;
+    -webkit-animation: scroll 1.5s infinite;
+    -moz-animation: scroll 1.5s infinite;
+    -ms-animation: scroll 1.5s infinite;
+    animation: scroll 1.5s infinite;
+}
+@-webkit-keyframes scroll 
+{
+    0% { opacity: 1; }
+    100% { opacity: 0; top: 26px; }
+}
+@-moz-keyframes scroll 
+{
+    0% { opacity: 1; }
+    100% { opacity: 0; top: 26px; }
+}
+@-ms-keyframes scroll 
+{
+    0% { opacity: 1; }
+    100% { opacity: 0; top: 26px; }
+}
+@keyframes scroll 
+{
+    0% { opacity: 1; }
+    100% { opacity: 0; top: 26px; }
+}
 /*
 header h1
 {
