@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Emoji</title>
+    <meta name="description" content="Emoji" />
+    <meta name="author" content="Matteo Casati" />	
+    <meta name="robots" content="index,follow" />
+    <meta name="revisit-after" content="1 days" />
+    <meta name="apple-mobile-web-app-title" content="Colors">
+    <meta name="application-name" content="Colors">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="handheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="cleartype" content="on">        
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/img/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/img/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <style>
+        .page { margin: 10px auto; width: 300px; font-family: sans-serif; }
+        h1 { font-size: 18px; font-family: sans-serif; color: #495057; margin: 15px 0; text-align: center; border-bottom: 1px solid #dee2e6; line-height: 2em; }
+        h2 { font-size: 14px; color: #495057; margin: 5px 0; }
+        section { border-bottom: 1px solid #dee2e6; padding: 10px 0; margin: 10px 0; }
+        textarea { width: 290px; padding: 5px; height: 50px; border: 1px solid #ced4da; font-size: 14px; }
+        button { width: 300px; line-height: 36px; padding: 0; font-weight: bold; font-size: 14px; background: #228ae6; color: #fff; border: 0; border-radius: 5px; margin: 10px 0; }
+        div.output { width: 280px; height: 50px; padding: 10px; font-size: 14px; background: #f1f3f5; }
+        
+        /**************************************************************\  
+          EMOJI (see header.css)
+        \**************************************************************/
+        img.emoji { width: 20px; height: 20px; vertical-align: middle; margin: 0 2px; }
+
+        div.emoji-selector-container { position: relative; width: 100%; height: 150px; background: #e8eef1; border: 1px solid #a8b7be; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+        div.emoji-selector-container div.emoji-selector-tab-buttons { width: 100%; position: absolute; left: 0; bottom: 0; right: 0; height: 32px; overflow: hidden; background: #a8b7be; }
+        div.emoji-selector-container div.emoji-selector-tab-buttons div.emoji-selector-tab-button { display: inline-block; width: 11.111111111111%; height: 32px; overflow: hidden; opacity: .8; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; cursor: pointer; background-position: center center; background-repeat: no-repeat; background-size: 16px 16px; }
+        div.emoji-selector-container div.emoji-selector-tab-buttons div.emoji-selector-tab-button.emoji-recently-used { background-image: url("img/emoji-selector-recently-used.png"); }    
+        div.emoji-selector-container div.emoji-selector-tab-buttons div.emoji-selector-tab-button.emoji-smileys-and-people { background-image: url("img/emoji-selector-smileys-and-people.png"); }
+        div.emoji-selector-container div.emoji-selector-tab-buttons div.emoji-selector-tab-button.emoji-nature-and-animals { background-image: url("img/emoji-selector-nature-and-animals.png"); }
+        div.emoji-selector-container div.emoji-selector-tab-buttons div.emoji-selector-tab-button.emoji-food-and-drink { background-image: url("img/emoji-selector-food-and-drink.png"); }
+        div.emoji-selector-container div.emoji-selector-tab-buttons div.emoji-selector-tab-button.emoji-activity { background-image: url("img/emoji-selector-activity.png"); }
+        div.emoji-selector-container div.emoji-selector-tab-buttons div.emoji-selector-tab-button.emoji-travel-and-places { border-right: none; background-image: url("img/emoji-selector-travel-and-places.png"); }
+        div.emoji-selector-container div.emoji-selector-tab-buttons div.emoji-selector-tab-button.emoji-objects { border-right: none; background-image: url("img/emoji-selector-objects.png"); }
+        div.emoji-selector-container div.emoji-selector-tab-buttons div.emoji-selector-tab-button.emoji-symbols { border-right: none; background-image: url("img/emoji-selector-symbols.png"); }
+        div.emoji-selector-container div.emoji-selector-tab-buttons div.emoji-selector-tab-button.emoji-flags { border-right: none; background-image: url("img/emoji-selector-flags.png"); }
+        div.emoji-selector-container div.emoji-selector-tab-buttons div.emoji-selector-tab-button:hover { background-color: #d9dfe2; opacity: 1; }
+        div.emoji-selector-container div.emoji-selector-tab-buttons div.emoji-selector-tab-button.active { background-color: #e8eef1; opacity: 1; }
+        div.emoji-selector-container div.emoji-selector-tab { position: absolute; top: 0; left: 0; bottom: 32px; right: 0; padding: 2px; overflow-y: scroll; }
+        div.emoji-selector-container div.emoji-selector-tab span.emoji { display: inline-block; padding: 2px; border: 1px solid transparent; border-radius: 4px; margin: 0; cursor: pointer; }
+        div.emoji-selector-container div.emoji-selector-tab span.emoji:hover { border-color: #d9dfe2; background: #fff; }
+        div.emoji-selector-container div.emoji-selector-tab span.emoji:active { box-shadow: 0 0 3px 0 #a8b7be; }
+        div.emoji-selector-container div.emoji-selector-tab span.emoji img.emoji { width: 22px; height: 22px; }
+        
+    </style>
+    <script src="../js/libs.js"></script>
+    <script src="emoji.js"></script>
+    <script>
+        
+        function getSelector()
+        {
+            var onSelect = function (shortcut, e) { alert(shortcut); };
+            var $selector = emoji.getSelector(onSelect);
+            $selector.appendTo($("div.getSelector"));
+        };
+        function textToImage()
+        {
+            var input = $("textarea.textToImage").val();
+            $("div.textToImage").html(emoji.textToImage(input));
+        };
+        function shortcutToImage()
+        {
+            var input = $("textarea.shortcutToImage").val();
+            $("div.shortcutToImage").html(emoji.shortcutToImage(input));
+        };
+        function shortcutToUnicode()
+        {
+            var input = $("textarea.shortcutToUnicode").val();
+            $("div.shortcutToUnicode").html(emoji.shortcutToUnicode(input));
+        };
+        function unicodeToShortcut()
+        {
+            var input = $("textarea.unicodeToShortcut").val();
+            $("div.unicodeToShortcut").html(emoji.unicodeToShortcut(input));
+        };
+        function textContainsOnlyEmoji()
+        {
+            var input = $("textarea.textContainsOnlyEmoji").val();
+            $("div.textContainsOnlyEmoji").html(emoji.textContainsOnlyEmoji(input) ? "true" : "false");
+        };    
+        
+    </script>
+    
+</head>
+<body>    
+    <div class="page">
+        <h1>Emoji Test Page</h1>
+        
+         <section>
+            <h2>getSelector(onSelect)</h2>
+            <button onclick="getSelector()">Execute</button>
+            <div class="getSelector"></div>
+        </section>
+        
+        <section>            
+            <h2>textToImage(text)</h2>
+            <textarea class="textToImage"></textarea>
+            <button onclick="textToImage()">Execute</button>
+            <div class="output textToImage"></div>
+        </section>
+        
+        <section>            
+            <h2>shortcutToImage(text)</h2>
+            <textarea class="shortcutToImage"></textarea>
+            <button onclick="shortcutToImage()">Execute</button>
+            <div class="output shortcutToImage"></div>
+        </section>
+                
+        <section>            
+            <h2>shortcutToUnicode(text)</h2>
+            <textarea class="shortcutToUnicode"></textarea>
+            <button onclick="shortcutToUnicode()">Execute</button>
+            <div class="output shortcutToUnicode"></div>
+        </section>
+    
+        <section>            
+            <h2>unicodeToShortcut(text)</h2>
+            <textarea class="unicodeToShortcut"></textarea>
+            <button onclick="unicodeToShortcut()">Execute</button>
+            <div class="output unicodeToShortcut"></div>
+        </section>
+        
+        <section>            
+            <h2>textContainsOnlyEmoji(text)</h2>
+            <textarea class="textContainsOnlyEmoji"></textarea>
+            <button onclick="textContainsOnlyEmoji()">Execute</button>
+            <div class="output textContainsOnlyEmoji"></div>
+        </section>
+                
+    </div>    
+</body>
+</html>

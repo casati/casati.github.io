@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Matteo Casati</title>
+    <meta name="description" content="Sono Matteo Casati, consulente freelance (.NET software architect e project manager) nell'area di Milano e mi occupo della progettazione, del design e dello sviluppo di siti e applicazioni web e mobile (iOS/Android)" />
+    <meta name="author" content="Matteo Casati" />	
+    <meta name="robots" content="index,follow" />
+    <meta name="revisit-after" content="1 days" />
+    <meta name="apple-mobile-web-app-title" content="Matteo Casati">
+    <meta name="application-name" content="Matteo Casati">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="handheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="cleartype" content="on">        
+    
+    <!-- TODO: sistemare app icons (sfondo bianco per iOS/Android) -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+    <link rel="manifest" href="img/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <link rel="stylesheet" href="css/hp.css">    
+    <script src="js/libs.js"></script>
+    
+</head>
+<body>
+    
+    <header>
+        <div class="content">
+            <h1>Ciao, sono <strong>Matteo</strong></h1>        
+            <hr>
+            <h2>Progetto, disegno, programmo, scrivo.</h2>        
+        </div>
+    </header>
+    <script>     
+        var $header = $("header");
+        var $background, 
+            backgroundPositionX,
+            backgroundYPosition,
+            backgroundDeltaX,
+            backgroundDeltaY,
+            backgroundDragStartX,
+            backgroundDragStartY,
+            backgroundDragActive;
+       
+        var onBackgroundDragStart = function (event)
+        {
+            backgroundDragActive = true;
+            backgroundDragStartX = (event.originalEvent.pageX - $header.offset().left) - backgroundXPosition;
+            backgroundDragStartY = (event.originalEvent.pageY - $header.offset().top) - backgroundYPosition;
+            console.log("BackgroundDrag - START: " + backgroundDragStartX + ", " + backgroundDragStartY);            
+        };
+        var onBackgroundDragMove = function (event)
+        {
+            if (!backgroundDragActive)
+                return;              
+            backgroundXPosition = Math.min(0, Math.max(backgroundDeltaX, (event.originalEvent.pageX - $header.offset().left - backgroundDragStartX)));
+            backgroundYPosition =  Math.min(0, Math.max(backgroundDeltaY, (event.originalEvent.pageY - $header.offset().top - backgroundDragStartY)));
+            console.log("BackgroundDrag - MOVE: " + backgroundXPosition + ", " + backgroundYPosition);
+            $background.css({ transform: "translate(" + backgroundXPosition + "px, " + backgroundYPosition + "px)" });
+            return false;
+        };
+        var onBackgroundDragStop = function (event)
+        {
+            backgroundDragActive = false;              
+            console.log("BackgroundDrag - STOP");            
+        };
+        var initBackground = function ()
+        {        
+            $header
+                .off("mousedown mouseover", onBackgroundDragStart)
+                .off("mouseup mouseout", onBackgroundDragStop)
+                .off("mousemove", onBackgroundDragMove);
+            
+            var backgroundNaturalWidth = $background.prop("naturalWidth");
+            var backgroundNaturalHeight = $background.prop("naturalHeight");            
+            var backgroundContainerWidth = $header.width();
+            var backgroundContainerHeight = $header.height();
+            
+            var backgroundZoom = Math.max(backgroundContainerWidth / backgroundNaturalWidth, backgroundContainerHeight / backgroundNaturalHeight);
+            
+            var backgroundWidth = Math.round(backgroundNaturalWidth * backgroundZoom);
+            var backgroundHeight = Math.round(backgroundNaturalHeight * backgroundZoom);
+            backgroundDeltaX = backgroundContainerWidth - backgroundWidth;
+            backgroundDeltaY = backgroundContainerHeight - backgroundHeight
+            backgroundXPosition = Math.round(backgroundDeltaX / 2);
+            backgroundYPosition = Math.round(backgroundDeltaY / 2);
+            $background
+                .width(backgroundWidth)
+                .height(backgroundHeight)
+                .css({ transform: "translate(" + backgroundXPosition + "px, " + backgroundYPosition + "px)" });
+            $header
+                .on("mousedown mouseover", onBackgroundDragStart)
+                .on("mouseup mouseout", onBackgroundDragStop)
+                .on("mousemove", onBackgroundDragMove);
+        };
+        $background = $("<img>").attr("src", "img/background_DEBUG.jpg").on("load", initBackground).attr("draggable", false).addClass("background").appendTo($header);        
+        $(window)
+            .on("resize", initBackground)
+            .on("deviceorientation", function (event)
+            {
+                var e = event.originalEvent;
+//                var x, y;        
+//                if (window.orientation == 0)
+//                {                    
+//                    x = e.beta;
+//                    y = e.gamma;
+//                }
+//                else if (window.orientation == 90)
+//                {
+//                    x = e.gamma;
+//                    y = e.beta;
+//                }
+//                else
+//                {
+//                    x = e.gamma * -1;
+//                    y = e.beta * -1;
+//                }
+                console.log("orientation: " + window.orientation + "; alpha: " + e.alpha + "; beta: " + e.beta + "; gamma: " + e.gamma);        
+            }); 
+    </script>
+    
+    <section>
+        <div class="content">
+            <h1>Esperienze</h1>
+            <hr>
+            <h2>Il Design, ASP.NET, C#, HTML5, CSS3, JavaScript e lo sviluppo di App Web &amp; Mobile sono il mio lavoro.<br><br>E la mia passione.</h2>
+            <p>Lavoro come <strong>consulente freelance in qualità di software architect e project manager</strong> nell'area di Milano e mi occupo principalmente della realizzazione di siti e applicazioni web e per mobile.</p>
+            <p>Ho iniziato la carriera informatica negli anni '90, programmando in ambiente MS-DOS con GW-Basic, quindi in Windows con Visual Basic che ho utilizzato dalla versione 4 alla 6.</p>
+            <p>Nel 1998 mi sono avvicinato al mondo Web, a partire da HTML, JavaScript e ASP, per poi passare &mdash; con l'arrivo della versione 1.0 del .NET Framework &mdash; ad ASP.NET e C#, tecnologie che seguo tutt'oggi con grande interesse e che utilizzo come principale piaffaforma di sviluppo lato server.</p>
+            <p>Nella mia esperienza lavorativa ho avuto modo di confrontarmi con svariate tipologie di progetto (e-commerce, corporate web sites, intranet, extranet e mobile) e di architettura (data-centric, distributed application e service oriented architecture).</p>
+            <p>Fin dai loro esordi ho abbracciato i nuovi standard per il Web (HTML5, CSS3 e ECMAScript 5) e adottato librerie e framework (come jQuery, LESS, ecc.) per lo sviluppo di applicazioni caratterizzate da interfacce moderne, accattivanti, dinamiche e fluide.</p>
+            <p>La crescente diffusione di dispositivi di tipo touch (tablet e smartphone) mi ha dato la possibilità di sviluppare applicazioni &mdash;  native/ibride e web app &mdash; per Apple iOS (iPhone, iPad, iPod) e per Google Android.</p>            
+        </div>
+    </section>
+    
+    <!-- TODO: community, chatta, industria 4.0, ecc. -->
+    
+    <section>
+        <div class="content">
+            <h1>Pubblicazioni</h1>
+            <hr>
+            <p>Sono stato docente in corsi di formazione superiore in ambito informatico e ho all'attivo diversi progetti editoriali, sia come autore che come technical proofreader che come revisore.</p>            
+            <div class="books">
+                <div class="books-carousel">
+                    <div class="book">                
+                        <img class="cover" src="img/cover-html5-espresso.jpg" alt="HTML5 con CSS3 e ECMAScript 5 - Espresso" />
+                        <p>Coautore</p>                
+                    </div>
+                    <div class="book">                
+                        <div><img class="cover" src="img/cover-aspnet-in-practice.jpg" alt="ASP.NET 4.0 in Practice" /></div>
+                        <p>Technical Proofreader</p>                
+                    </div>
+                    <div class="book">
+                        <div class="cover"><img class="cover" src="img/cover-aspnet4.jpg" alt="ASP.NET 4.0 in C# e VB" /></div>
+                        <p>Revisore della versione italiana</p>                
+                    </div>
+                    <div class="book">                
+                        <img class="cover" src="img/cover-csharp4.jpg" alt="C# 4 E .NET 4" />
+                        <p>Revisore della versione italiana</p>
+                    </div>
+                </div>
+            </div>
+            <script>
+                $(".books-carousel").owlCarousel({
+                    loop: true,
+                    margin: 15,
+                    nav: false,
+                    autoplay: true,
+                    autoplayTimeout: 2000,
+                    autoplayHoverPause: true,
+                    responsive: 
+                    {
+                        0: { items: 1 },
+                        450: { items: 2 },
+                        600: { items: 3 }
+                    }
+                });
+            </script>
+        </div>            
+    </section>
+    
+    <!-- TODO: contatti, instagram?, ecc. -->
+    
+    <footer>            
+        <p>&copy; Copyright 2009-2016 Matteo Casati</p>
+        <p>Partita IVA: IT 06568450966</p>                
+        <p><em>Tutti i marchi sono dei rispettivi proprietari.</em></p>        
+    </footer>
+
+    <script>
+        
+        // Google Analytics
+        var _gaq = _gaq || [];
+        _gaq.push(["_setAccount", "UA-121278-7"]);
+        _gaq.push(["_trackPageview"]);
+        (function ()
+        {
+            var ga = document.createElement("script");
+            ga.type = "text/javascript";
+            ga.async = true;
+            ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</body>
+</html>

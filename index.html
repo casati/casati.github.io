@@ -16,25 +16,22 @@
     <meta name="format-detection" content="telephone=no" />
     <meta http-equiv="cleartype" content="on">        
     
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/icons/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icons/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/icons/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="img/icons/apple-touch-icon-60x60.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/icons/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/icons/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/icons/apple-touch-icon-152x152.png" />
-    <link rel="icon" type="image/png" href="img/icons/favicon-196x196.png" sizes="196x196" />
-    <link rel="icon" type="image/png" href="img/icons/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/png" href="img/icons/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="img/icons/favicon-16x16.png" sizes="16x16" />
-    <link rel="icon" type="image/png" href="img/icons/favicon-128.png" sizes="128x128" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="img/icons/mstile-144x144.png" />
-    <meta name="msapplication-square70x70logo" content="img/icons/mstile-70x70.png" />
-    <meta name="msapplication-square150x150logo" content="img/icons/mstile-150x150.png" />
-    <meta name="msapplication-wide310x150logo" content="img/icons/mstile-310x150.png" />
-    <meta name="msapplication-square310x310logo" content="img/icons/mstile-310x310.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/img/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/img/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     
     <link rel="stylesheet" href="css/hp.css">    
     <script src="js/libs.js"></script>
@@ -202,41 +199,116 @@
     
     <!-- TODO: contatti, instagram?, ecc. -->
     <section>
-        <div id="instafeed"></div>
+        <div class="instagram"></div>
         <script>
             var showInstagram = function (data)
             {
                 var renderizeItem = function (item)
                 {
+                    //
                     // TODO
-                    $("<img>").appendTo($("#instafeed")).attr("src", item.images.low_resolution.url);
+                    //
+                    switch (item.type)
+                    {
+                        case "image":
+                            $("<img>").appendTo($(".instagram")).attr("src", item.images.low_resolution.url);
+                            break;
+                        case "video":
+                            $("<video>").appendTo($(".instagram")).attr("src", item.videos.low_resolution.url);
+                            break;
+                    }
                 }
-                for (var i = 0; i < data.data.length; i++)
-                    renderizeItem(data.data[i]);
+                
+                // START DEBUG VIDEO
+                data.items.unshift({
+                          "tags": [
+                            "freedom",
+                            "moleskine",
+                            "sketch"
+                          ],
+                          "id": "1437233158990797986_190523929",
+                          "user": {
+                            "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/13267464_814413908694464_802389055_a.jpg",
+                            "full_name": "Matteo Casati",
+                            "id": "190523929",
+                            "username": "m_casati"
+                          },
+                          "users_in_photo": [
+
+                          ],
+                          "user_has_liked": false,
+                          "comments": {
+                            "count": 3
+                          },
+                          "filter": "Ludwig",
+                          "type": "video",
+                          "caption": {
+                            "text": "#moleskine #sketch #freedom",
+                            "id": "17870789815039247",
+                            "created_time": "1485551565",
+                            "from": {
+                              "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/13267464_814413908694464_802389055_a.jpg",
+                              "full_name": "Matteo Casati",
+                              "id": "190523929",
+                              "username": "m_casati"
+                            }
+                          },
+                          "link": "https://www.instagram.com/p/BPyE_F9Dxyi/",
+                          "videos": {
+                            "low_resolution": {
+                              "width": 480,
+                              "height": 480,
+                              "url": "https://scontent.cdninstagram.com/t50.2886-16/16328082_393653297635855_7763134373699780608_n.mp4"
+                            },
+                            "low_bandwidth": {
+                              "width": 480,
+                              "height": 480,
+                              "url": "https://scontent.cdninstagram.com/t50.2886-16/16328082_393653297635855_7763134373699780608_n.mp4"
+                            },
+                            "standard_resolution": {
+                              "width": 640,
+                              "height": 640,
+                              "url": "https://scontent.cdninstagram.com/t50.2886-16/16379141_1414396205237455_2094176966348374016_n.mp4"
+                            }
+                          },
+                          "location": null,
+                          "attribution": null,
+                          "images": {
+                            "low_resolution": {
+                              "width": 320,
+                              "height": 320,
+                              "url": "https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/16110694_978400618960234_3754455140791222272_n.jpg?ig_cache_key=MTQzNzIzMzE1ODk5MDc5Nzk4Ng%3D%3D.2"
+                            },
+                            "thumbnail": {
+                              "width": 150,
+                              "height": 150,
+                              "url": "https://scontent.cdninstagram.com/t51.2885-15/s150x150/e15/16110694_978400618960234_3754455140791222272_n.jpg?ig_cache_key=MTQzNzIzMzE1ODk5MDc5Nzk4Ng%3D%3D.2"
+                            },
+                            "standard_resolution": {
+                              "width": 640,
+                              "height": 640,
+                              "url": "https://scontent.cdninstagram.com/t51.2885-15/s640x640/e15/16110694_978400618960234_3754455140791222272_n.jpg?ig_cache_key=MTQzNzIzMzE1ODk5MDc5Nzk4Ng%3D%3D.2"
+                            }
+                          },
+                          "created_time": "1485551565",
+                          "likes": {
+                            "count": 13
+                          }
+                        });
+                // END DEBUG VIDEO
+                
+                for (var i = 0; i < data.items.length; i++)
+                    renderizeItem(data.items[i]);
                 
             };
             
             $.ajax(
             { 
-                url: "https://api.instagram.com/v1/users/self/media/recent",
-                dataType: "jsonp",
-                type: "GET",
-                data: { count: 16, access_token: "190523929.1e9c14b.b60c36b8573d428695040254fa96243d" }, 
+                url: "https://www.instagram.com/m_casati/media/",
                 success: showInstagram
             });
         </script>
-<!--
-        <script src="js/instafeed.js"></script>
-        <script>
-            // https://api.instagram.com/v1/users/self/media/recent?count=12&access_token=190523929.1e9c14b.b60c36b8573d428695040254fa96243d
-            var feed = new Instafeed({
-              get: 'user',
-              userId: "self", // Ex: 1374300081
-              accessToken: '190523929.1e9c14b.b60c36b8573d428695040254fa96243d'
-            });
-            feed.run();
-        </script>
--->
+
     </section>
     
     
