@@ -1394,8 +1394,426 @@ emoji.list = [
     
     // [9 - Diversity - not available via editor/selector]
     ,{ unicode: "👦🏻", id: "1f466-1f3fb", shortcuts: [":boy_tone1:"], category: 9 }
-    
-    // ,{ unicode: "", id: "", shortcuts: ["::"], category: 9 }
+    ,{ unicode: "👦🏼", id: "1f466-1f3fc", shortcuts: [":boy_tone2:"], category: 9 }
+    ,{ unicode: "👦🏽", id: "1f466-1f3fd", shortcuts: [":boy_tone3:"], category: 9 }
+    ,{ unicode: "👦🏾", id: "1f466-1f3fe", shortcuts: [":boy_tone4:"], category: 9 }
+    ,{ unicode: "👦🏿", id: "1f466-1f3ff", shortcuts: [":boy_tone5:"], category: 9 }
+    ,{ unicode: "👧🏻", id: "1f467-1f3fb", shortcuts: [":girl_tone1:"], category: 9 }
+    ,{ unicode: "👧🏼", id: "1f467-1f3fc", shortcuts: [":girl_tone2:"], category: 9 }
+    ,{ unicode: "👧🏽", id: "1f467-1f3fd", shortcuts: [":girl_tone3:"], category: 9 }
+    ,{ unicode: "👧🏾", id: "1f467-1f3fe", shortcuts: [":girl_tone4:"], category: 9 }
+    ,{ unicode: "👧🏿", id: "1f467-1f3ff", shortcuts: [":girl_tone5:"], category: 9 }
+    ,{ unicode: "👨🏻", id: "1f468-1f3fb", shortcuts: [":man_tone1:"], category: 9 }
+    ,{ unicode: "👨🏼", id: "1f468-1f3fc", shortcuts: [":man_tone2:"], category: 9 }
+    ,{ unicode: "👨🏽", id: "1f468-1f3fd", shortcuts: [":man_tone3:"], category: 9 }
+    ,{ unicode: "👨🏾", id: "1f468-1f3fe", shortcuts: [":man_tone4:"], category: 9 }
+    ,{ unicode: "👨🏿", id: "1f468-1f3ff", shortcuts: [":man_tone5:"], category: 9 }    
+    ,{ unicode: "👩🏻", id: "1f469-1f3fb", shortcuts: [":woman_tone1:"], category: 9 }
+    ,{ unicode: "👩🏼", id: "1f469-1f3fc", shortcuts: [":woman_tone2:"], category: 9 }
+    ,{ unicode: "👩🏽", id: "1f469-1f3fd", shortcuts: [":woman_tone3:"], category: 9 }
+    ,{ unicode: "👩🏾", id: "1f469-1f3fe", shortcuts: [":woman_tone4:"], category: 9 }
+    ,{ unicode: "👩🏿", id: "1f469-1f3ff", shortcuts: [":woman_tone5:"], category: 9 }
+    ,{ unicode: "👴🏻", id: "1f474-1f3fb", shortcuts: [":older_man_tone1:"], category: 9 }
+    ,{ unicode: "👴🏼", id: "1f474-1f3fc", shortcuts: [":older_man_tone2:"], category: 9 }
+    ,{ unicode: "👴🏽", id: "1f474-1f3fd", shortcuts: [":older_man_tone3:"], category: 9 }
+    ,{ unicode: "👴🏾", id: "1f474-1f3fe", shortcuts: [":older_man_tone4:"], category: 9 }
+    ,{ unicode: "👴🏿", id: "1f474-1f3ff", shortcuts: [":older_man_tone5:"], category: 9 }
+    ,{ unicode: "👵🏻", id: "1f475-1f3fb", shortcuts: [":older_woman_tone1:"], category: 9 }
+    ,{ unicode: "👵🏼", id: "1f475-1f3fc", shortcuts: [":older_woman_tone2:"], category: 9 }
+    ,{ unicode: "👵🏽", id: "1f475-1f3fd", shortcuts: [":older_woman_tone3:"], category: 9 }
+    ,{ unicode: "👵🏾", id: "1f475-1f3fe", shortcuts: [":older_woman_tone4:"], category: 9 }
+    ,{ unicode: "👵🏿", id: "1f475-1f3ff", shortcuts: [":older_woman_tone5:"], category: 9 }
+    ,{ unicode: "👶🏻", id: "1f476-1f3fb", shortcuts: [":baby_tone1:"], category: 9 }
+    ,{ unicode: "👶🏼", id: "1f476-1f3fc", shortcuts: [":baby_tone2:"], category: 9 }
+    ,{ unicode: "👶🏽", id: "1f476-1f3fd", shortcuts: [":baby_tone3:"], category: 9 }
+    ,{ unicode: "👶🏾", id: "1f476-1f3fe", shortcuts: [":baby_tone4:"], category: 9 }
+    ,{ unicode: "👶🏿", id: "1f476-1f3ff", shortcuts: [":baby_tone5:"], category: 9 }
+    ,{ unicode: "👼🏻", id: "1f47c-1f3fb", shortcuts: [":angel_tone1:"], category: 9 }
+    ,{ unicode: "👼🏼", id: "1f47c-1f3fc", shortcuts: [":angel_tone2:"], category: 9 }
+    ,{ unicode: "👼🏽", id: "1f47c-1f3fd", shortcuts: [":angel_tone3:"], category: 9 }
+    ,{ unicode: "👼🏾", id: "1f47c-1f3fe", shortcuts: [":angel_tone4:"], category: 9 }
+    ,{ unicode: "👼🏿", id: "1f47c-1f3ff", shortcuts: [":angel_tone5:"], category: 9 }
+    ,{ unicode: "👮🏻", id: "1f46e-1f3fb", shortcuts: [":cop_tone1:"], category: 9 }
+    ,{ unicode: "👮🏼", id: "1f46e-1f3fc", shortcuts: [":cop_tone2:"], category: 9 }
+    ,{ unicode: "👮🏽", id: "1f46e-1f3fd", shortcuts: [":cop_tone3:"], category: 9 }
+    ,{ unicode: "👮🏾", id: "1f46e-1f3fe", shortcuts: [":cop_tone4:"], category: 9 }
+    ,{ unicode: "👮🏿", id: "1f46e-1f3ff", shortcuts: ["cop:_tone5:"], category: 9 }
+    ,{ unicode: "🕵🏻", id: "1f575-1f3fb", shortcuts: [":spy_tone1:"], category: 9 }
+    ,{ unicode: "🕵🏼", id: "1f575-1f3fc", shortcuts: [":spy_tone2:"], category: 9 }
+    ,{ unicode: "🕵🏽", id: "1f575-1f3fd", shortcuts: [":spy_tone3:"], category: 9 }
+    ,{ unicode: "🕵🏾", id: "1f575-1f3fe", shortcuts: [":spy_tone4:"], category: 9 }
+    ,{ unicode: "🕵🏿", id: "1f575-1f3ff", shortcuts: [":spy_tone5:"], category: 9 }
+    ,{ unicode: "💂🏻", id: "1f482-1f3fb", shortcuts: [":guardsman_tone1:"], category: 9 }
+    ,{ unicode: "💂🏼", id: "1f482-1f3fc", shortcuts: [":guardsman_tone2:"], category: 9 }
+    ,{ unicode: "💂🏽", id: "1f482-1f3fd", shortcuts: [":guardsman_tone3:"], category: 9 }
+    ,{ unicode: "💂🏾", id: "1f482-1f3fe", shortcuts: [":guardsman_tone4:"], category: 9 }
+    ,{ unicode: "💂🏿", id: "1f482-1f3ff", shortcuts: [":guardsman_tone5:"], category: 9 }
+    ,{ unicode: "👷🏻", id: "1f477-1f3fb", shortcuts: [":construction_worker_tone1:"], category: 9 }
+    ,{ unicode: "👷🏼", id: "1f477-1f3fc", shortcuts: [":construction_worker_tone2:"], category: 9 }
+    ,{ unicode: "👷🏽", id: "1f477-1f3fd", shortcuts: [":construction_worker_tone3:"], category: 9 }
+    ,{ unicode: "👷🏾", id: "1f477-1f3fe", shortcuts: [":construction_worker_tone4:"], category: 9 }
+    ,{ unicode: "👷🏿", id: "1f477-1f3ff", shortcuts: [":construction_worker_tone5:"], category: 9 }
+    ,{ unicode: "👳🏻", id: "1f473-1f3fb", shortcuts: [":man_with_turban_tone1:"], category: 9 }
+    ,{ unicode: "👳🏼", id: "1f473-1f3fc", shortcuts: [":man_with_turban_tone2:"], category: 9 }
+    ,{ unicode: "👳🏽", id: "1f473-1f3fd", shortcuts: [":man_with_turban_tone3:"], category: 9 }
+    ,{ unicode: "👳🏾", id: "1f473-1f3fe", shortcuts: [":man_with_turban_tone4:"], category: 9 }
+    ,{ unicode: "👳🏿", id: "1f473-1f3ff", shortcuts: [":man_with_turban_tone5:"], category: 9 }
+    ,{ unicode: "👱🏻", id: "1f471-1f3fb", shortcuts: [":person_with_blond_hair_tone1:"], category: 9 }
+    ,{ unicode: "👱🏼", id: "1f471-1f3fc", shortcuts: [":person_with_blond_hair_tone2:"], category: 9 }
+    ,{ unicode: "👱🏽", id: "1f471-1f3fd", shortcuts: [":person_with_blond_hair_tone3:"], category: 9 }
+    ,{ unicode: "👱🏾", id: "1f471-1f3fe", shortcuts: [":person_with_blond_hair_tone4:"], category: 9 }
+    ,{ unicode: "👱🏿", id: "1f471-1f3ff", shortcuts: [":person_with_blond_hair_tone5:"], category: 9 }
+    ,{ unicode: "🎅🏻", id: "1f385-1f3fb", shortcuts: [":santa_tone1:"], category: 9 }
+    ,{ unicode: "🎅🏼", id: "1f385-1f3fc", shortcuts: [":santa_tone2:"], category: 9 }
+    ,{ unicode: "🎅🏽", id: "1f385-1f3fd", shortcuts: [":santa_tone3:"], category: 9 }
+    ,{ unicode: "🎅🏾", id: "1f385-1f3fe", shortcuts: [":santa_tone4:"], category: 9 }
+    ,{ unicode: "🎅🏿", id: "1f385-1f3ff", shortcuts: ["santa:_tone5:"], category: 9 }
+    ,{ unicode: "🤶🏻", id: "1f936-1f3fb", shortcuts: [":mrs_claus_tone1:"], category: 9 }
+    ,{ unicode: "🤶🏼", id: "1f936-1f3fc", shortcuts: [":mrs_claus_tone2:"], category: 9 }
+    ,{ unicode: "🤶🏽", id: "1f936-1f3fd", shortcuts: [":mrs_claus_tone3:"], category: 9 }
+    ,{ unicode: "🤶🏾", id: "1f936-1f3fe", shortcuts: [":mrs_claus_tone4:"], category: 9 }
+    ,{ unicode: "🤶🏿", id: "1f936-1f3ff", shortcuts: [":mrs_claus_tone5:"], category: 9 }
+    ,{ unicode: "👸🏻", id: "1f478-1f3fb", shortcuts: [":princess_tone1:"], category: 9 }
+    ,{ unicode: "👸🏼", id: "1f478-1f3fc", shortcuts: [":princess_tone2:"], category: 9 }
+    ,{ unicode: "👸🏽", id: "1f478-1f3fd", shortcuts: [":princess_tone3:"], category: 9 }
+    ,{ unicode: "👸🏾", id: "1f478-1f3fe", shortcuts: [":princess_tone4:"], category: 9 }
+    ,{ unicode: "👸🏿", id: "1f478-1f3ff", shortcuts: [":princess_tone5:"], category: 9 }
+    ,{ unicode: "🤴🏻", id: "1f934-1f3fb", shortcuts: [":prince_tone1:"], category: 9 }
+    ,{ unicode: "🤴🏼", id: "1f934-1f3fc", shortcuts: [":prince_tone2:"], category: 9 }
+    ,{ unicode: "🤴🏽", id: "1f934-1f3fd", shortcuts: [":prince_tone3:"], category: 9 }
+    ,{ unicode: "🤴🏾", id: "1f934-1f3fe", shortcuts: [":prince_tone4:"], category: 9 }
+    ,{ unicode: "🤴🏿", id: "1f934-1f3ff", shortcuts: [":prince_tone5:"], category: 9 }
+    ,{ unicode: "👰🏻", id: "1f470-1f3fb", shortcuts: [":bride_with_veil_tone1:"], category: 9 }
+    ,{ unicode: "👰🏼", id: "1f470-1f3fc", shortcuts: [":bride_with_veil_tone2:"], category: 9 }
+    ,{ unicode: "👰🏽", id: "1f470-1f3fd", shortcuts: [":bride_with_veil_tone3:"], category: 9 }
+    ,{ unicode: "👰🏾", id: "1f470-1f3fe", shortcuts: [":bride_with_veil_tone4:"], category: 9 }
+    ,{ unicode: "👰🏿", id: "1f470-1f3ff", shortcuts: [":bride_with_veil_tone5:"], category: 9 }
+    ,{ unicode: "🤵🏻", id: "1f935-1f3fb", shortcuts: [":man_in_tuxedo_tone1:"], category: 9 }
+    ,{ unicode: "🤵🏼", id: "1f935-1f3fc", shortcuts: [":man_in_tuxedo_tone2:"], category: 9 }
+    ,{ unicode: "🤵🏽", id: "1f935-1f3fd", shortcuts: [":man_in_tuxedo_tone3:"], category: 9 }
+    ,{ unicode: "🤵🏾", id: "1f935-1f3fe", shortcuts: [":man_in_tuxedo_tone4:"], category: 9 }
+    ,{ unicode: "🤵🏿", id: "1f935-1f3ff", shortcuts: [":man_in_tuxedo_tone5:"], category: 9 }
+    ,{ unicode: "🤰🏻", id: "1f930-1f3fb", shortcuts: [":pregnant_woman_tone1:"], category: 9 }
+    ,{ unicode: "🤰🏼", id: "1f930-1f3fc", shortcuts: [":pregnant_woman_tone2:"], category: 9 }
+    ,{ unicode: "🤰🏽", id: "1f930-1f3fd", shortcuts: [":pregnant_woman_tone3:"], category: 9 }
+    ,{ unicode: "🤰🏾", id: "1f930-1f3fe", shortcuts: [":pregnant_woman_tone4:"], category: 9 }
+    ,{ unicode: "🤰🏿", id: "1f930-1f3ff", shortcuts: [":pregnant_woman_tone5:"], category: 9 }
+    ,{ unicode: "👲🏻", id: "1f472-1f3fb", shortcuts: [":man_with_gua_pi_mao_tone1:"], category: 9 }
+    ,{ unicode: "👲🏼", id: "1f472-1f3fc", shortcuts: [":man_with_gua_pi_mao_tone2:"], category: 9 }
+    ,{ unicode: "👲🏽", id: "1f472-1f3fd", shortcuts: [":man_with_gua_pi_mao_tone3:"], category: 9 }
+    ,{ unicode: "👲🏾", id: "1f472-1f3fe", shortcuts: [":man_with_gua_pi_mao_tone4:"], category: 9 }
+    ,{ unicode: "👲🏿", id: "1f472-1f3ff", shortcuts: [":man_with_gua_pi_mao_tone5:"], category: 9 }
+    ,{ unicode: "🙍🏻", id: "1f64d-1f3fb", shortcuts: [":person_frowning_tone1:"], category: 9 }
+    ,{ unicode: "🙍🏼", id: "1f64d-1f3fc", shortcuts: [":person_frowning_tone2:"], category: 9 }
+    ,{ unicode: "🙍🏽", id: "1f64d-1f3fd", shortcuts: [":person_frowning_tone3:"], category: 9 }
+    ,{ unicode: "🙍🏾", id: "1f64d-1f3fe", shortcuts: [":person_frowning_tone4:"], category: 9 }
+    ,{ unicode: "🙍🏿", id: "1f64d-1f3ff", shortcuts: [":person_frowning_tone5:"], category: 9 }
+    ,{ unicode: "🙎🏻", id: "1f64e-1f3fb", shortcuts: [":person_with_pouting_face_tone1:"], category: 9 }
+    ,{ unicode: "🙎🏼", id: "1f64e-1f3fc", shortcuts: [":person_with_pouting_face_tone2:"], category: 9 }
+    ,{ unicode: "🙎🏽", id: "1f64e-1f3fd", shortcuts: [":person_with_pouting_face_tone3:"], category: 9 }
+    ,{ unicode: "🙎🏾", id: "1f64e-1f3fe", shortcuts: [":person_with_pouting_face_tone4:"], category: 9 }
+    ,{ unicode: "🙎🏿", id: "1f64e-1f3ff", shortcuts: [":person_with_pouting_face_tone5:"], category: 9 }
+    ,{ unicode: "🙅🏻", id: "1f645-1f3fb", shortcuts: [":no_good_tone1:"], category: 9 }
+    ,{ unicode: "🙅🏼", id: "1f645-1f3fc", shortcuts: [":no_good_tone2:"], category: 9 }
+    ,{ unicode: "🙅🏽", id: "1f645-1f3fd", shortcuts: [":no_good_tone3:"], category: 9 }
+    ,{ unicode: "🙅🏾", id: "1f645-1f3fe", shortcuts: [":no_good_tone4:"], category: 9 }
+    ,{ unicode: "🙅🏿", id: "1f645-1f3ff", shortcuts: [":no_good_tone5:"], category: 9 }
+    ,{ unicode: "🙆🏻", id: "1f646-1f3fb", shortcuts: [":ok_woman_tone1:"], category: 9 }
+    ,{ unicode: "🙆🏼", id: "1f646-1f3fc", shortcuts: [":ok_woman_tone2:"], category: 9 }
+    ,{ unicode: "🙆🏽", id: "1f646-1f3fd", shortcuts: [":ok_woman_tone3:"], category: 9 }
+    ,{ unicode: "🙆🏾", id: "1f646-1f3fe", shortcuts: [":ok_woman_tone4:"], category: 9 }
+    ,{ unicode: "🙆🏿", id: "1f646-1f3ff", shortcuts: [":ok_woman_tone5:"], category: 9 }
+    ,{ unicode: "💁🏻", id: "1f481-1f3fb", shortcuts: [":information_desk_person_tone1:"], category: 9 }
+    ,{ unicode: "💁🏼", id: "1f481-1f3fc", shortcuts: [":information_desk_person_tone2:"], category: 9 }
+    ,{ unicode: "💁🏽", id: "1f481-1f3fd", shortcuts: [":information_desk_person_tone3:"], category: 9 }
+    ,{ unicode: "💁🏾", id: "1f481-1f3fe", shortcuts: [":information_desk_person_tone4:"], category: 9 }
+    ,{ unicode: "💁🏿", id: "1f481-1f3ff", shortcuts: [":information_desk_person_tone5:"], category: 9 }
+    ,{ unicode: "🙋🏻", id: "1f64b-1f3fb", shortcuts: [":raising_hand_tone1:"], category: 9 }
+    ,{ unicode: "🙋🏼", id: "1f64b-1f3fc", shortcuts: [":raising_hand_tone2:"], category: 9 }
+    ,{ unicode: "🙋🏽", id: "1f64b-1f3fd", shortcuts: [":raising_hand_tone3:"], category: 9 }
+    ,{ unicode: "🙋🏾", id: "1f64b-1f3fe", shortcuts: [":raising_hand_tone4:"], category: 9 }
+    ,{ unicode: "🙋🏿", id: "1f64b-1f3ff", shortcuts: [":raising_hand_tone5:"], category: 9 }
+    ,{ unicode: "🙇🏻", id: "1f647-1f3fb", shortcuts: [":bow_tone1:"], category: 9 }
+    ,{ unicode: "🙇🏼", id: "1f647-1f3fc", shortcuts: [":bow_tone2:"], category: 9 }
+    ,{ unicode: "🙇🏽", id: "1f647-1f3fd", shortcuts: [":bow_tone3:"], category: 9 }
+    ,{ unicode: "🙇🏾", id: "1f647-1f3fe", shortcuts: [":bow_tone4:"], category: 9 }
+    ,{ unicode: "🙇🏿", id: "1f647-1f3ff", shortcuts: [":bow_tone5:"], category: 9 }
+    ,{ unicode: "🤦🏻", id: "1f926-1f3fb", shortcuts: [":face_palm_tone1:"], category: 9 }
+    ,{ unicode: "🤦🏼", id: "1f926-1f3fc", shortcuts: [":face_palm_tone2:"], category: 9 }
+    ,{ unicode: "🤦🏽", id: "1f926-1f3fd", shortcuts: [":face_palm_tone3:"], category: 9 }
+    ,{ unicode: "🤦🏾", id: "1f926-1f3fe", shortcuts: [":face_palm_tone4:"], category: 9 }
+    ,{ unicode: "🤦🏿", id: "1f926-1f3ff", shortcuts: [":face_palm_tone5:"], category: 9 }
+    ,{ unicode: "🤷🏻", id: "1f937-1f3fb", shortcuts: [":shrug_tone1:"], category: 9 }
+    ,{ unicode: "🤷🏼", id: "1f937-1f3fc", shortcuts: [":shrug_tone2:"], category: 9 }
+    ,{ unicode: "🤷🏽", id: "1f937-1f3fd", shortcuts: [":shrug_tone3:"], category: 9 }
+    ,{ unicode: "🤷🏾", id: "1f937-1f3fe", shortcuts: [":shrug_tone4:"], category: 9 }
+    ,{ unicode: "🤷🏿", id: "1f937-1f3ff", shortcuts: [":shrug_tone5:"], category: 9 }
+    ,{ unicode: "💆🏻", id: "1f486-1f3fb", shortcuts: [":massage_tone1:"], category: 9 }
+    ,{ unicode: "💆🏼", id: "1f486-1f3fc", shortcuts: [":massage_tone2:"], category: 9 }
+    ,{ unicode: "💆🏽", id: "1f486-1f3fd", shortcuts: [":massage_tone3:"], category: 9 }
+    ,{ unicode: "💆🏾", id: "1f486-1f3fe", shortcuts: [":massage_tone4:"], category: 9 }
+    ,{ unicode: "💆🏿", id: "1f486-1f3ff", shortcuts: [":massage_tone5:"], category: 9 }
+    ,{ unicode: "💇🏻", id: "1f487-1f3fb", shortcuts: [":haircut_tone1:"], category: 9 }
+    ,{ unicode: "💇🏼", id: "1f487-1f3fc", shortcuts: [":haircut_tone2:"], category: 9 }
+    ,{ unicode: "💇🏽", id: "1f487-1f3fd", shortcuts: [":haircut_tone3:"], category: 9 }
+    ,{ unicode: "💇🏾", id: "1f487-1f3fe", shortcuts: [":haircut_tone4:"], category: 9 }
+    ,{ unicode: "💇🏿", id: "1f487-1f3ff", shortcuts: [":haircut_tone5:"], category: 9 }
+    ,{ unicode: "🚶🏻", id: "1f6b6-1f3fb", shortcuts: [":walking_tone1:"], category: 9 }
+    ,{ unicode: "🚶🏼", id: "1f6b6-1f3fc", shortcuts: [":walking_tone2:"], category: 9 }
+    ,{ unicode: "🚶🏽", id: "1f6b6-1f3fd", shortcuts: [":walking_tone3:"], category: 9 }
+    ,{ unicode: "🚶🏾", id: "1f6b6-1f3fe", shortcuts: [":walking_tone4:"], category: 9 }
+    ,{ unicode: "🚶🏿", id: "1f6b6-1f3ff", shortcuts: [":walking_tone5:"], category: 9 }
+    ,{ unicode: "🏃🏻", id: "1f3c3-1f3fb", shortcuts: [":runner_tone1:"], category: 9 }
+    ,{ unicode: "🏃🏼", id: "1f3c3-1f3fc", shortcuts: [":runner_tone2:"], category: 9 }
+    ,{ unicode: "🏃🏽", id: "1f3c3-1f3fd", shortcuts: [":runner_tone3:"], category: 9 }
+    ,{ unicode: "🏃🏾", id: "1f3c3-1f3fe", shortcuts: [":runner_tone4:"], category: 9 }
+    ,{ unicode: "🏃🏿", id: "1f3c3-1f3ff", shortcuts: [":runner_tone5:"], category: 9 }
+    ,{ unicode: "💃🏻", id: "1f483-1f3fb", shortcuts: [":dancer_tone1:"], category: 9 }
+    ,{ unicode: "💃🏼", id: "1f483-1f3fc", shortcuts: [":dancer_tone2:"], category: 9 }
+    ,{ unicode: "💃🏽", id: "1f483-1f3fd", shortcuts: [":dancer_tone3:"], category: 9 }
+    ,{ unicode: "💃🏾", id: "1f483-1f3fe", shortcuts: [":dancer_tone4:"], category: 9 }
+    ,{ unicode: "💃🏿", id: "1f483-1f3ff", shortcuts: [":dancer_tone5:"], category: 9 }
+    ,{ unicode: "🕺🏻", id: "1f57a-1f3fb", shortcuts: [":man_dancing_tone1:"], category: 9 }
+    ,{ unicode: "🕺🏼", id: "1f57a-1f3fc", shortcuts: [":man_dancing_tone2:"], category: 9 }
+    ,{ unicode: "🕺🏽", id: "1f57a-1f3fd", shortcuts: [":man_dancing_tone3:"], category: 9 }
+    ,{ unicode: "🕺🏾", id: "1f57a-1f3fe", shortcuts: [":man_dancing_tone4:"], category: 9 }
+    ,{ unicode: "🕺🏿", id: "1f57a-1f3ff", shortcuts: [":man_dancing_tone5:"], category: 9 }
+    ,{ unicode: "🏇🏻", id: "1f3c7-1f3fb", shortcuts: [":horse_racing_tone1:"], category: 9 }
+    ,{ unicode: "🏇🏼", id: "1f3c7-1f3fc", shortcuts: [":horse_racing_tone2:"], category: 9 }
+    ,{ unicode: "🏇🏽", id: "1f3c7-1f3fd", shortcuts: [":horse_racing_tone3:"], category: 9 }
+    ,{ unicode: "🏇🏾", id: "1f3c7-1f3fe", shortcuts: [":horse_racing_tone4:"], category: 9 }
+    ,{ unicode: "🏇🏿", id: "1f3c7-1f3ff", shortcuts: [":horse_racing_tone5:"], category: 9 }
+    ,{ unicode: "🏄🏻", id: "1f3c4-1f3fb", shortcuts: [":surfer_tone1:"], category: 9 }
+    ,{ unicode: "🏄🏼", id: "1f3c4-1f3fc", shortcuts: [":surfer_tone2:"], category: 9 }
+    ,{ unicode: "🏄🏽", id: "1f3c4-1f3fd", shortcuts: [":surfer_tone3:"], category: 9 }
+    ,{ unicode: "🏄🏾", id: "1f3c4-1f3fe", shortcuts: [":surfer_tone4:"], category: 9 }
+    ,{ unicode: "🏄🏿", id: "1f3c4-1f3ff", shortcuts: [":surfer_tone5:"], category: 9 }
+    ,{ unicode: "🚣🏻", id: "1f6a3-1f3fb", shortcuts: [":rowboat_tone1:"], category: 9 }
+    ,{ unicode: "🚣🏼", id: "1f6a3-1f3fc", shortcuts: [":rowboat_tone2:"], category: 9 }
+    ,{ unicode: "🚣🏽", id: "1f6a3-1f3fd", shortcuts: [":rowboat_tone3:"], category: 9 }
+    ,{ unicode: "🚣🏾", id: "1f6a3-1f3fe", shortcuts: [":rowboat_tone4:"], category: 9 }
+    ,{ unicode: "🚣🏿", id: "1f6a3-1f3ff", shortcuts: [":rowboat_tone5:"], category: 9 }
+    ,{ unicode: "🏊🏻", id: "1f3ca-1f3fb", shortcuts: [":swimmer_tone1:"], category: 9 }
+    ,{ unicode: "🏊🏼", id: "1f3ca-1f3fc", shortcuts: [":swimmer_tone2:"], category: 9 }
+    ,{ unicode: "🏊🏽", id: "1f3ca-1f3fd", shortcuts: [":swimmer_tone3:"], category: 9 }
+    ,{ unicode: "🏊🏾", id: "1f3ca-1f3fe", shortcuts: [":swimmer_tone4:"], category: 9 }
+    ,{ unicode: "🏊🏿", id: "1f3ca-1f3ff", shortcuts: [":swimmer_tone5:"], category: 9 }
+    ,{ unicode: "⛹🏻", id: "26f9-1f3fb", shortcuts: [":basketball_player_tone1:"], category: 9 }
+    ,{ unicode: "⛹🏼", id: "26f9-1f3fc", shortcuts: [":basketball_player_tone2:"], category: 9 }
+    ,{ unicode: "⛹🏽", id: "26f9-1f3fd", shortcuts: [":basketball_player_tone3:"], category: 9 }
+    ,{ unicode: "⛹🏾", id: "26f9-1f3fe", shortcuts: [":basketball_player_tone4:"], category: 9 }
+    ,{ unicode: "⛹🏿", id: "26f9-1f3ff", shortcuts: [":basketball_player_tone5:"], category: 9 }
+    ,{ unicode: "🏋🏻", id: "1f3cb-1f3fb", shortcuts: [":lifter_tone1:"], category: 9 }
+    ,{ unicode: "🏋🏼", id: "1f3cb-1f3fc", shortcuts: [":lifter_tone2:"], category: 9 }
+    ,{ unicode: "🏋🏽", id: "1f3cb-1f3fd", shortcuts: [":lifter_tone3:"], category: 9 }
+    ,{ unicode: "🏋🏾", id: "1f3cb-1f3fe", shortcuts: [":lifter_tone4:"], category: 9 }
+    ,{ unicode: "🏋🏿", id: "1f3cb-1f3ff", shortcuts: [":lifter_tone5:"], category: 9 }
+    ,{ unicode: "🚴🏻", id: "1f6b4-1f3fb", shortcuts: [":bicyclist_tone1:"], category: 9 }
+    ,{ unicode: "🚴🏼", id: "1f6b4-1f3fc", shortcuts: [":bicyclist_tone2:"], category: 9 }
+    ,{ unicode: "🚴🏽", id: "1f6b4-1f3fd", shortcuts: [":bicyclist_tone3:"], category: 9 }
+    ,{ unicode: "🚴🏾", id: "1f6b4-1f3fe", shortcuts: [":bicyclist_tone4:"], category: 9 }
+    ,{ unicode: "🚴🏿", id: "1f6b4-1f3ff", shortcuts: [":bicyclist_tone5:"], category: 9 }
+    ,{ unicode: "🚵🏻", id: "1f6b5-1f3fb", shortcuts: [":mountain_bicyclist_tone1:"], category: 9 }
+    ,{ unicode: "🚵🏼", id: "1f6b5-1f3fc", shortcuts: [":mountain_bicyclist_tone2:"], category: 9 }
+    ,{ unicode: "🚵🏽", id: "1f6b5-1f3fd", shortcuts: [":mountain_bicyclist_tone3:"], category: 9 }
+    ,{ unicode: "🚵🏾", id: "1f6b5-1f3fe", shortcuts: [":mountain_bicyclist_tone4:"], category: 9 }
+    ,{ unicode: "🚵🏿", id: "1f6b5-1f3ff", shortcuts: [":mountain_bicyclist_tone5:"], category: 9 }
+    ,{ unicode: "🤸🏻", id: "1f938-1f3fb", shortcuts: [":cartwheel_tone1:"], category: 9 }
+    ,{ unicode: "🤸🏼", id: "1f938-1f3fc", shortcuts: [":cartwheel_tone2:"], category: 9 }
+    ,{ unicode: "🤸🏽", id: "1f938-1f3fd", shortcuts: [":cartwheel_tone3:"], category: 9 }
+    ,{ unicode: "🤸🏾", id: "1f938-1f3fe", shortcuts: [":cartwheel_tone4:"], category: 9 }
+    ,{ unicode: "🤸🏿", id: "1f938-1f3ff", shortcuts: [":cartwheel_tone5:"], category: 9 }    
+    //,{ unicode: "🤼🏻", id: "1f93c-1f3fb", shortcuts: [":wrestlers_tone1:"], category: 9 } // :wrestlers_XXX: - no PNG available in Apple icon set on emoji.codes 
+    //,{ unicode: "🤼🏼", id: "1f93c-1f3fc", shortcuts: [":wrestlers_tone2:"], category: 9 }
+    //,{ unicode: "🤼🏽", id: "1f93c-1f3fd", shortcuts: [":wrestlers_tone3:"], category: 9 }
+    //,{ unicode: "🤼🏾", id: "1f93c-1f3fe", shortcuts: [":wrestlers_tone4:"], category: 9 }
+    //,{ unicode: "🤼🏿", id: "1f93c-1f3ff", shortcuts: [":wrestlers_tone5:"], category: 9 }
+    ,{ unicode: "🤽🏻", id: "1f93d-1f3fb", shortcuts: [":water_polo_tone1:"], category: 9 }
+    ,{ unicode: "🤽🏼", id: "1f93d-1f3fc", shortcuts: [":water_polo_tone2:"], category: 9 }
+    ,{ unicode: "🤽🏽", id: "1f93d-1f3fd", shortcuts: [":water_polo_tone3:"], category: 9 }
+    ,{ unicode: "🤽🏾", id: "1f93d-1f3fe", shortcuts: [":water_polo_tone4:"], category: 9 }
+    ,{ unicode: "🤽🏿", id: "1f93d-1f3ff", shortcuts: [":water_polo_tone5:"], category: 9 }
+    ,{ unicode: "🤾🏻", id: "1f93e-1f3fb", shortcuts: [":handball_tone1:"], category: 9 }
+    ,{ unicode: "🤾🏼", id: "1f93e-1f3fc", shortcuts: [":handball_tone2:"], category: 9 }
+    ,{ unicode: "🤾🏽", id: "1f93e-1f3fd", shortcuts: [":handball_tone3:"], category: 9 }
+    ,{ unicode: "🤾🏾", id: "1f93e-1f3fe", shortcuts: [":handball_tone4:"], category: 9 }
+    ,{ unicode: "🤾🏿", id: "1f93e-1f3ff", shortcuts: [":handball_tone5:"], category: 9 }
+    ,{ unicode: "🤹🏻", id: "1f939-1f3fb", shortcuts: [":juggling_tone1:"], category: 9 }
+    ,{ unicode: "🤹🏼", id: "1f939-1f3fc", shortcuts: [":juggling_tone2:"], category: 9 }
+    ,{ unicode: "🤹🏽", id: "1f939-1f3fd", shortcuts: [":juggling_tone3:"], category: 9 }
+    ,{ unicode: "🤹🏾", id: "1f939-1f3fe", shortcuts: [":juggling_tone4:"], category: 9 }
+    ,{ unicode: "🤹🏿", id: "1f939-1f3ff", shortcuts: [":juggling_tone5:"], category: 9 }
+    ,{ unicode: "💪🏻", id: "1f4aa-1f3fb", shortcuts: [":muscle_tone1:"], category: 9 }
+    ,{ unicode: "💪🏼", id: "1f4aa-1f3fc", shortcuts: [":muscle_tone2:"], category: 9 }
+    ,{ unicode: "💪🏽", id: "1f4aa-1f3fd", shortcuts: [":muscle_tone3:"], category: 9 }
+    ,{ unicode: "💪🏾", id: "1f4aa-1f3fe", shortcuts: [":muscle_tone4:"], category: 9 }
+    ,{ unicode: "💪🏿", id: "1f4aa-1f3ff", shortcuts: [":muscle_tone5:"], category: 9 }
+    ,{ unicode: "🤳🏻", id: "1f933-1f3fb", shortcuts: [":selfie_tone1:"], category: 9 }
+    ,{ unicode: "🤳🏼", id: "1f933-1f3fc", shortcuts: [":selfie_tone2:"], category: 9 }
+    ,{ unicode: "🤳🏽", id: "1f933-1f3fd", shortcuts: [":selfie_tone3:"], category: 9 }
+    ,{ unicode: "🤳🏾", id: "1f933-1f3fe", shortcuts: [":selfie_tone4:"], category: 9 }
+    ,{ unicode: "🤳🏿", id: "1f933-1f3ff", shortcuts: [":selfie_tone5:"], category: 9 }
+    ,{ unicode: "👈🏻", id: "1f448-1f3fb", shortcuts: [":point_left_tone1:"], category: 9 }
+    ,{ unicode: "👈🏼", id: "1f448-1f3fc", shortcuts: [":point_left_tone2:"], category: 9 }
+    ,{ unicode: "👈🏽", id: "1f448-1f3fd", shortcuts: [":point_left_tone3:"], category: 9 }
+    ,{ unicode: "👈🏾", id: "1f448-1f3fe", shortcuts: [":point_left_tone4:"], category: 9 }
+    ,{ unicode: "👈🏿", id: "1f448-1f3ff", shortcuts: [":point_left_tone5:"], category: 9 }
+    ,{ unicode: "👉🏻", id: "1f449-1f3fb", shortcuts: [":point_right_tone1:"], category: 9 }
+    ,{ unicode: "👉🏼", id: "1f449-1f3fc", shortcuts: [":point_right_tone2:"], category: 9 }
+    ,{ unicode: "👉🏽", id: "1f449-1f3fd", shortcuts: [":point_right_tone3:"], category: 9 }
+    ,{ unicode: "👉🏾", id: "1f449-1f3fe", shortcuts: [":point_right_tone4:"], category: 9 }
+    ,{ unicode: "👉🏿", id: "1f449-1f3ff", shortcuts: [":point_right_tone5:"], category: 9 }
+    ,{ unicode: "☝🏻", id: "261d-1f3fb", shortcuts: [":point_up_tone1:"], category: 9 }
+    ,{ unicode: "☝🏼", id: "261d-1f3fc", shortcuts: [":point_up_tone2:"], category: 9 }
+    ,{ unicode: "☝🏽", id: "261d-1f3fd", shortcuts: [":point_up_tone3:"], category: 9 }
+    ,{ unicode: "☝🏾", id: "261d-1f3fe", shortcuts: [":point_up_tone4:"], category: 9 }
+    ,{ unicode: "☝🏿", id: "261d-1f3ff", shortcuts: [":point_up_tone5:"], category: 9 }
+    ,{ unicode: "👆🏻", id: "1f446-1f3fb", shortcuts: [":point_up_2_tone1:"], category: 9 }
+    ,{ unicode: "👆🏼", id: "1f446-1f3fc", shortcuts: [":point_up_2_tone2:"], category: 9 }
+    ,{ unicode: "👆🏽", id: "1f446-1f3fd", shortcuts: [":point_up_2_tone3:"], category: 9 }
+    ,{ unicode: "👆🏾", id: "1f446-1f3fe", shortcuts: [":point_up_2_tone4:"], category: 9 }
+    ,{ unicode: "👆🏿", id: "1f446-1f3ff", shortcuts: [":point_up_2_tone5:"], category: 9 }
+    ,{ unicode: "🖕🏻", id: "1f595-1f3fb", shortcuts: [":middle_finger_tone1:"], category: 9 }
+    ,{ unicode: "🖕🏼", id: "1f595-1f3fc", shortcuts: [":middle_finger_tone2:"], category: 9 }
+    ,{ unicode: "🖕🏽", id: "1f595-1f3fd", shortcuts: [":middle_finger_tone3:"], category: 9 }
+    ,{ unicode: "🖕🏾", id: "1f595-1f3fe", shortcuts: [":middle_finger_tone4:"], category: 9 }
+    ,{ unicode: "🖕🏿", id: "1f595-1f3ff", shortcuts: [":middle_finger_tone5:"], category: 9 }
+    ,{ unicode: "👇🏻", id: "1f447-1f3fb", shortcuts: [":point_down_tone1:"], category: 9 }
+    ,{ unicode: "👇🏼", id: "1f447-1f3fc", shortcuts: [":point_down_tone2:"], category: 9 }
+    ,{ unicode: "👇🏽", id: "1f447-1f3fd", shortcuts: [":point_down_tone3:"], category: 9 }
+    ,{ unicode: "👇🏾", id: "1f447-1f3fe", shortcuts: [":point_down_tone4:"], category: 9 }
+    ,{ unicode: "👇🏿", id: "1f447-1f3ff", shortcuts: [":point_down_tone5:"], category: 9 }
+    ,{ unicode: "✌🏻", id: "270c-1f3fb", shortcuts: [":v_tone1:"], category: 9 }
+    ,{ unicode: "✌🏼", id: "270c-1f3fc", shortcuts: [":v_tone2:"], category: 9 }
+    ,{ unicode: "✌🏽", id: "270c-1f3fd", shortcuts: [":v_tone3:"], category: 9 }
+    ,{ unicode: "✌🏾", id: "270c-1f3fe", shortcuts: [":v_tone4:"], category: 9 }
+    ,{ unicode: "✌🏿", id: "270c-1f3ff", shortcuts: [":v_tone5:"], category: 9 }
+    ,{ unicode: "🤞🏻", id: "1f91e-1f3fb", shortcuts: [":fingers_crossed_tone1:"], category: 9 }
+    ,{ unicode: "🤞🏼", id: "1f91e-1f3fc", shortcuts: [":fingers_crossed_tone2:"], category: 9 }
+    ,{ unicode: "🤞🏽", id: "1f91e-1f3fd", shortcuts: [":fingers_crossed_tone3:"], category: 9 }
+    ,{ unicode: "🤞🏾", id: "1f91e-1f3fe", shortcuts: [":fingers_crossed_tone4:"], category: 9 }
+    ,{ unicode: "🤞🏿", id: "1f91e-1f3ff", shortcuts: [":fingers_crossed_tone5:"], category: 9 }
+    ,{ unicode: "🖖🏻", id: "1f596-1f3fb", shortcuts: [":vulcan_tone1:"], category: 9 }
+    ,{ unicode: "🖖🏼", id: "1f596-1f3fc", shortcuts: [":vulcan_tone2:"], category: 9 }
+    ,{ unicode: "🖖🏽", id: "1f596-1f3fd", shortcuts: [":vulcan_tone3:"], category: 9 }
+    ,{ unicode: "🖖🏾", id: "1f596-1f3fe", shortcuts: [":vulcan_tone4:"], category: 9 }
+    ,{ unicode: "🖖🏿", id: "1f596-1f3ff", shortcuts: [":vulcan_tone5:"], category: 9 }
+    ,{ unicode: "🤘🏻", id: "1f918-1f3fb", shortcuts: [":metal_tone1:"], category: 9 }
+    ,{ unicode: "🤘🏼", id: "1f918-1f3fc", shortcuts: [":metal_tone2:"], category: 9 }
+    ,{ unicode: "🤘🏽", id: "1f918-1f3fd", shortcuts: [":metal_tone3:"], category: 9 }
+    ,{ unicode: "🤘🏾", id: "1f918-1f3fe", shortcuts: [":metal_tone4:"], category: 9 }
+    ,{ unicode: "🤘🏿", id: "1f918-1f3ff", shortcuts: [":metal_tone5:"], category: 9 }
+    ,{ unicode: "🤙🏻", id: "1f919-1f3fb", shortcuts: [":call_me_tone1:"], category: 9 }
+    ,{ unicode: "🤙🏼", id: "1f919-1f3fc", shortcuts: [":call_me_tone2:"], category: 9 }
+    ,{ unicode: "🤙🏽", id: "1f919-1f3fd", shortcuts: [":call_me_tone3:"], category: 9 }
+    ,{ unicode: "🤙🏾", id: "1f919-1f3fe", shortcuts: [":call_me_tone4:"], category: 9 }
+    ,{ unicode: "🤙🏿", id: "1f919-1f3ff", shortcuts: [":call_me_tone5:"], category: 9 }
+    ,{ unicode: "🖐🏻", id: "1f590-1f3fb", shortcuts: [":hand_splayed_tone1:"], category: 9 }
+    ,{ unicode: "🖐🏼", id: "1f590-1f3fc", shortcuts: [":hand_splayed_tone2:"], category: 9 }
+    ,{ unicode: "🖐🏽", id: "1f590-1f3fd", shortcuts: [":hand_splayed_tone3:"], category: 9 }
+    ,{ unicode: "🖐🏾", id: "1f590-1f3fe", shortcuts: [":hand_splayed_tone4:"], category: 9 }
+    ,{ unicode: "🖐🏿", id: "1f590-1f3ff", shortcuts: [":hand_splayed_tone5:"], category: 9 }
+    ,{ unicode: "✋🏻", id: "270b-1f3fb", shortcuts: [":raised_hand_tone1:"], category: 9 }
+    ,{ unicode: "✋🏼", id: "270b-1f3fc", shortcuts: [":raised_hand_tone2:"], category: 9 }
+    ,{ unicode: "✋🏽", id: "270b-1f3fd", shortcuts: [":raised_hand_tone3:"], category: 9 }
+    ,{ unicode: "✋🏾", id: "270b-1f3fe", shortcuts: [":raised_hand_tone4:"], category: 9 }
+    ,{ unicode: "✋🏿", id: "270b-1f3ff", shortcuts: [":raised_hand_tone5:"], category: 9 }
+    ,{ unicode: "👌🏻", id: "1f44c-1f3fb", shortcuts: [":ok_hand_tone1:"], category: 9 }
+    ,{ unicode: "👌🏼", id: "1f44c-1f3fc", shortcuts: [":ok_hand_tone2:"], category: 9 }
+    ,{ unicode: "👌🏽", id: "1f44c-1f3fd", shortcuts: [":ok_hand_tone3:"], category: 9 }
+    ,{ unicode: "👌🏾", id: "1f44c-1f3fe", shortcuts: [":ok_hand_tone4:"], category: 9 }
+    ,{ unicode: "👌🏿", id: "1f44c-1f3ff", shortcuts: [":ok_hand_tone5:"], category: 9 }
+    ,{ unicode: "👍🏻", id: "1f44d-1f3fb", shortcuts: [":thumbsup_tone1:"], category: 9 }
+    ,{ unicode: "👍🏼", id: "1f44d-1f3fc", shortcuts: [":thumbsup_tone2:"], category: 9 }
+    ,{ unicode: "👍🏽", id: "1f44d-1f3fd", shortcuts: [":thumbsup_tone3:"], category: 9 }
+    ,{ unicode: "👍🏾", id: "1f44d-1f3fe", shortcuts: [":thumbsup_tone4:"], category: 9 }
+    ,{ unicode: "👍🏿", id: "1f44d-1f3ff", shortcuts: [":thumbsup_tone5:"], category: 9 }
+    ,{ unicode: "👎🏻", id: "1f44e-1f3fb", shortcuts: [":thumbsdown_tone1:"], category: 9 }
+    ,{ unicode: "👎🏼", id: "1f44e-1f3fc", shortcuts: [":thumbsdown_tone2:"], category: 9 }
+    ,{ unicode: "👎🏽", id: "1f44e-1f3fd", shortcuts: [":thumbsdown_tone3:"], category: 9 }
+    ,{ unicode: "👎🏾", id: "1f44e-1f3fe", shortcuts: [":thumbsdown_tone4:"], category: 9 }
+    ,{ unicode: "👎🏿", id: "1f44e-1f3ff", shortcuts: [":thumbsdown_tone5:"], category: 9 }
+    ,{ unicode: "✊🏻", id: "270a-1f3fb", shortcuts: [":fist_tone1:"], category: 9 }
+    ,{ unicode: "✊🏼", id: "270a-1f3fc", shortcuts: [":fist_tone2:"], category: 9 }
+    ,{ unicode: "✊🏽", id: "270a-1f3fd", shortcuts: [":fist_tone3:"], category: 9 }
+    ,{ unicode: "✊🏾", id: "270a-1f3fe", shortcuts: [":fist_tone4:"], category: 9 }
+    ,{ unicode: "✊🏿", id: "270a-1f3ff", shortcuts: [":fist_tone5:"], category: 9 }
+    ,{ unicode: "👊🏻", id: "1f44a-1f3fb", shortcuts: [":punch_tone1:"], category: 9 }
+    ,{ unicode: "👊🏼", id: "1f44a-1f3fc", shortcuts: [":punch_tone2:"], category: 9 }
+    ,{ unicode: "👊🏽", id: "1f44a-1f3fd", shortcuts: [":punch_tone3:"], category: 9 }
+    ,{ unicode: "👊🏾", id: "1f44a-1f3fe", shortcuts: [":punch_tone4:"], category: 9 }
+    ,{ unicode: "👊🏿", id: "1f44a-1f3ff", shortcuts: [":punch_tone5:"], category: 9 }
+    ,{ unicode: "🤛🏻", id: "1f91b-1f3fb", shortcuts: [":left_facing_fist_tone1:"], category: 9 }
+    ,{ unicode: "🤛🏼", id: "1f91b-1f3fc", shortcuts: [":left_facing_fist_tone2:"], category: 9 }
+    ,{ unicode: "🤛🏽", id: "1f91b-1f3fd", shortcuts: [":left_facing_fist_tone3:"], category: 9 }
+    ,{ unicode: "🤛🏾", id: "1f91b-1f3fe", shortcuts: [":left_facing_fist_tone4:"], category: 9 }
+    ,{ unicode: "🤛🏿", id: "1f91b-1f3ff", shortcuts: [":left_facing_fist_tone5:"], category: 9 }
+    ,{ unicode: "🤜🏻", id: "1f91c-1f3fb", shortcuts: [":right_facing_fist_tone1:"], category: 9 }
+    ,{ unicode: "🤜🏼", id: "1f91c-1f3fc", shortcuts: [":right_facing_fist_tone2:"], category: 9 }
+    ,{ unicode: "🤜🏽", id: "1f91c-1f3fd", shortcuts: [":right_facing_fist_tone3:"], category: 9 }
+    ,{ unicode: "🤜🏾", id: "1f91c-1f3fe", shortcuts: [":right_facing_fist_tone4:"], category: 9 }
+    ,{ unicode: "🤜🏿", id: "1f91c-1f3ff", shortcuts: [":right_facing_fist_tone5:"], category: 9 }
+    ,{ unicode: "🤚🏻", id: "1f91a-1f3fb", shortcuts: [":raised_back_of_hand_tone1:"], category: 9 }
+    ,{ unicode: "🤚🏼", id: "1f91a-1f3fc", shortcuts: [":raised_back_of_hand_tone2:"], category: 9 }
+    ,{ unicode: "🤚🏽", id: "1f91a-1f3fd", shortcuts: [":raised_back_of_hand_tone3:"], category: 9 }
+    ,{ unicode: "🤚🏾", id: "1f91a-1f3fe", shortcuts: [":raised_back_of_hand_tone4:"], category: 9 }
+    ,{ unicode: "🤚🏿", id: "1f91a-1f3ff", shortcuts: [":raised_back_of_hand_tone5:"], category: 9 }
+    ,{ unicode: "👋🏻", id: "1f44b-1f3fb", shortcuts: [":wave_tone1:"], category: 9 }
+    ,{ unicode: "👋🏼", id: "1f44b-1f3fc", shortcuts: [":wave_tone2:"], category: 9 }
+    ,{ unicode: "👋🏽", id: "1f44b-1f3fd", shortcuts: [":wave_tone3:"], category: 9 }
+    ,{ unicode: "👋🏾", id: "1f44b-1f3fe", shortcuts: [":wave_tone4:"], category: 9 }
+    ,{ unicode: "👋🏿", id: "1f44b-1f3ff", shortcuts: [":wave_tone5:"], category: 9 }
+    ,{ unicode: "👏🏻", id: "1f44f-1f3fb", shortcuts: [":clap_tone1:"], category: 9 }
+    ,{ unicode: "👏🏼", id: "1f44f-1f3fc", shortcuts: [":clap_tone2:"], category: 9 }
+    ,{ unicode: "👏🏽", id: "1f44f-1f3fd", shortcuts: [":clap_tone3:"], category: 9 }
+    ,{ unicode: "👏🏾", id: "1f44f-1f3fe", shortcuts: [":clap_tone4:"], category: 9 }
+    ,{ unicode: "👏🏿", id: "1f44f-1f3ff", shortcuts: [":clap_tone5:"], category: 9 }
+    ,{ unicode: "✍🏻", id: "270d-1f3fb", shortcuts: [":writing_hand_tone1:"], category: 9 }
+    ,{ unicode: "✍🏼", id: "270d-1f3fc", shortcuts: [":writing_hand_tone2:"], category: 9 }
+    ,{ unicode: "✍🏽", id: "270d-1f3fd", shortcuts: [":writing_hand_tone3:"], category: 9 }
+    ,{ unicode: "✍🏾", id: "270d-1f3fe", shortcuts: [":writing_hand_tone4:"], category: 9 }
+    ,{ unicode: "✍🏿", id: "270d-1f3ff", shortcuts: [":writing_hand_tone5:"], category: 9 }
+    ,{ unicode: "👐🏻", id: "1f450-1f3fb", shortcuts: [":open_hands_tone1:"], category: 9 }
+    ,{ unicode: "👐🏼", id: "1f450-1f3fc", shortcuts: [":open_hands_tone2:"], category: 9 }
+    ,{ unicode: "👐🏽", id: "1f450-1f3fd", shortcuts: [":open_hands_tone3:"], category: 9 }
+    ,{ unicode: "👐🏾", id: "1f450-1f3fe", shortcuts: [":open_hands_tone4:"], category: 9 }
+    ,{ unicode: "👐🏿", id: "1f450-1f3ff", shortcuts: [":open_hands_tone5:"], category: 9 }
+    ,{ unicode: "🙌🏻", id: "1f64c-1f3fb", shortcuts: [":raised_hands_tone1:"], category: 9 }
+    ,{ unicode: "🙌🏼", id: "1f64c-1f3fc", shortcuts: [":raised_hands_tone2:"], category: 9 }
+    ,{ unicode: "🙌🏽", id: "1f64c-1f3fd", shortcuts: [":raised_hands_tone3:"], category: 9 }
+    ,{ unicode: "🙌🏾", id: "1f64c-1f3fe", shortcuts: [":raised_hands_tone4:"], category: 9 }
+    ,{ unicode: "🙌🏿", id: "1f64c-1f3ff", shortcuts: [":raised_hands_tone5:"], category: 9 }
+    ,{ unicode: "🙏🏻", id: "1f64f-1f3fb", shortcuts: [":pray_tone1:"], category: 9 }
+    ,{ unicode: "🙏🏼", id: "1f64f-1f3fc", shortcuts: [":pray_tone2:"], category: 9 }
+    ,{ unicode: "🙏🏽", id: "1f64f-1f3fd", shortcuts: [":pray_tone3:"], category: 9 }
+    ,{ unicode: "🙏🏾", id: "1f64f-1f3fe", shortcuts: [":pray_tone4:"], category: 9 }
+    ,{ unicode: "🙏🏿", id: "1f64f-1f3ff", shortcuts: [":pray_tone5:"], category: 9 }
+    //,{ unicode: "🤝🏻", id: "1f91d-1f3fb", shortcuts: [":handshake_tone1:"], category: 9 } // :handshake_XXX: - no PNG available in Apple icon set on emoji.codes 
+    //,{ unicode: "🤝🏼", id: "1f91d-1f3fc", shortcuts: [":handshake_tone2:"], category: 9 }
+    //,{ unicode: "🤝🏽", id: "1f91d-1f3fd", shortcuts: [":handshake_tone3:"], category: 9 }
+    //,{ unicode: "🤝🏾", id: "1f91d-1f3fe", shortcuts: [":handshake_tone4:"], category: 9 }
+    //,{ unicode: "🤝🏿", id: "1f91d-1f3ff", shortcuts: [":handshake_tone5:"], category: 9 }
+    ,{ unicode: "💅🏻", id: "1f485-1f3fb", shortcuts: [":nail_care_tone1:"], category: 9 }
+    ,{ unicode: "💅🏼", id: "1f485-1f3fc", shortcuts: [":nail_care_tone2:"], category: 9 }
+    ,{ unicode: "💅🏽", id: "1f485-1f3fd", shortcuts: [":nail_care_tone3:"], category: 9 }
+    ,{ unicode: "💅🏾", id: "1f485-1f3fe", shortcuts: [":nail_care_tone4:"], category: 9 }
+    ,{ unicode: "💅🏿", id: "1f485-1f3ff", shortcuts: [":nail_care_tone5:"], category: 9 }
+    ,{ unicode: "👂🏻", id: "1f442-1f3fb", shortcuts: [":ear_tone1:"], category: 9 }
+    ,{ unicode: "👂🏼", id: "1f442-1f3fc", shortcuts: [":ear_tone2:"], category: 9 }
+    ,{ unicode: "👂🏽", id: "1f442-1f3fd", shortcuts: [":ear_tone3:"], category: 9 }
+    ,{ unicode: "👂🏾", id: "1f442-1f3fe", shortcuts: [":ear_tone4:"], category: 9 }
+    ,{ unicode: "👂🏿", id: "1f442-1f3ff", shortcuts: [":ear_tone5:"], category: 9 }
+    ,{ unicode: "👃🏻", id: "1f443-1f3fb", shortcuts: [":nose_tone1:"], category: 9 }
+    ,{ unicode: "👃🏼", id: "1f443-1f3fc", shortcuts: [":nose_tone2:"], category: 9 }
+    ,{ unicode: "👃🏽", id: "1f443-1f3fd", shortcuts: [":nose_tone3:"], category: 9 }
+    ,{ unicode: "👃🏾", id: "1f443-1f3fe", shortcuts: [":nose_tone4:"], category: 9 }
+    ,{ unicode: "👃🏿", id: "1f443-1f3ff", shortcuts: [":nose_tone5:"], category: 9 }    
+    ,{ unicode: "🛀🏻", id: "1f6c0-1f3fb", shortcuts: [":bath_tone1:"], category: 9 }
+    ,{ unicode: "🛀🏼", id: "1f6c0-1f3fc", shortcuts: [":bath_tone2:"], category: 9 }
+    ,{ unicode: "🛀🏽", id: "1f6c0-1f3fd", shortcuts: [":bath_tone3:"], category: 9 }
+    ,{ unicode: "🛀🏾", id: "1f6c0-1f3fe", shortcuts: [":bath_tone4:"], category: 9 }
+    ,{ unicode: "🛀🏿", id: "1f6c0-1f3ff", shortcuts: [":bath_tone5:"], category: 9 }
+
 ];
 
 
@@ -1486,36 +1904,39 @@ emoji._initUnicodes();
 //
 emoji.shortcutToImage = emoji.replaceShortcutWithIcons = function (text)
 {
-    if (!text || text == "")
-        return text;
+    var t = text;
+    if (!t || t == "")
+        return t;
     for (var i = 0; i < emoji._shortcutsIndex.length; i++)
     {
         var shortcut = emoji._shortcuts[emoji._shortcutsIndex[i]];
-        text = text.replace(shortcut.pattern, shortcut.replacement)
+        t = t.replace(shortcut.pattern, shortcut.replacement)
     }
-    return text;
+    return t;
 };
 
 emoji.shortcutToUnicode = function (text)
 {
-    if (!text || text == "")
-        return text;
+    var t = text;
+    if (!t || t == "")
+        return t;
     for (var i = 0; i < emoji._shortcutsIndex.length; i++)
     {
         var shortcut = emoji._shortcuts[emoji._shortcutsIndex[i]];
-        text = text.replace(shortcut.pattern, shortcut.unicode)
+        t = t.replace(shortcut.pattern, shortcut.unicode)
     }
-    return text;
+    return t;
 };
 
 emoji.unicodeToShortcut = emoji.replaceUnicodeCharacterWithShortcut = function (text)   // i.e. from iPhone emoji text (unicode) to shortcut
 {
-//    text = text.replace(new RegExp("️", "gim"), ""); // there's a character (U+FE0F - http://codepoints.net/U+FE0F) in regex pattern, trust me :)
+    var t = text;
+//    t = t.replace(new RegExp("️", "gim"), ""); // there's a character (U+FE0F - http://codepoints.net/U+FE0F) in regex pattern, trust me :)
 //    for (var i = 0; i < emoji.list.length; i++)
-//        text = text.replace(new RegExp(emoji.list[i].unicode, "gim"), emoji.list[i].shortcuts[0]);
+//        t = t.replace(new RegExp(emoji.list[i].unicode, "gim"), emoji.list[i].shortcuts[0]);
     for (var i = 0; i < emoji._unicodesIndex.length; i++)
-        text = text.replace(new RegExp(emoji._unicodesIndex[i], "gim"), emoji._unicodes[emoji._unicodesIndex[i]]);    
-    return text;
+        t = t.replace(new RegExp(emoji._unicodesIndex[i], "gim"), emoji._unicodes[emoji._unicodesIndex[i]]);    
+    return t;
 };
 
 emoji.textToImage = function (text) 
@@ -1668,7 +2089,7 @@ emoji.getSelector = function (onSelect)
     $("<div>").addClass("emoji-selector-tab-button emoji-objects").appendTo($tabButtons).attr("title", "Oggetti").on("click", function () { setCurrentTab("emoji-objects"); });
     $("<div>").addClass("emoji-selector-tab-button emoji-symbols").appendTo($tabButtons).attr("title", "Simboli").on("click", function () { setCurrentTab("emoji-symbols"); });
     $("<div>").addClass("emoji-selector-tab-button emoji-flags").appendTo($tabButtons).attr("title", "Bandiere").on("click", function () { setCurrentTab("emoji-flags"); });
-
+        
     setCurrentTab(emoji.recentlyUsed.length > 0 ? "emoji-recently-used" : "emoji-smileys-and-people");
     return $container;
 };
