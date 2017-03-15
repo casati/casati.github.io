@@ -1820,8 +1820,10 @@ emoji.list = [
 //
 // Utils
 //
-emoji.getIconUrl = function (id) 
+emoji.getIconUrl = function (id, checkIfExists) 
 {
+    if (checkIfExists && emoji.find(id) == null)
+        return null;
     return emoji.baseIconUrl + id.toLowerCase() + ".png";
 };
 
@@ -1844,7 +1846,9 @@ emoji.find = function (id)
 //
 emoji._shortcutsIndex = [];
 emoji._shortcuts = {};
-emoji._initShortcuts = function ()
+emoji._unicodesIndex = [];
+emoji._unicodes = {};
+emoji._initIndexes = function ()
 {
     var getPattern = function (shortcut)
     {
@@ -1873,31 +1877,19 @@ emoji._initShortcuts = function ()
             emoji._shortcutsIndex.push(e.shortcuts[j]);
             emoji._shortcuts[e.shortcuts[j]] = { pattern: getPattern(e.shortcuts[j]), replacement: emoji.getIcon(e), unicode: e.unicode };
         }
+        emoji._unicodesIndex.push(e.unicode);        
+        emoji._unicodes[e.unicode] = e.shortcuts[0];
     }
     emoji._shortcutsIndex.sort(function (a, b) // sort by length (desc) to avoid conflicts (i.e. ":D" vs. ":Dart")
     {
         return b.length - a.length; // ASC -> a - b; DESC -> b - a
     });
-};
-emoji._initShortcuts();
-
-emoji._unicodesIndex = [];
-emoji._unicodes = {};
-emoji._initUnicodes = function ()
-{
-    for (var i = 0; i < emoji.list.length; i++)
-    {
-        var e = emoji.list[i];
-        emoji._unicodesIndex.push(e.unicode);        
-        emoji._unicodes[e.unicode] = emoji.list[i].shortcuts[0];
-        
-    }
     emoji._unicodesIndex.sort(function (a, b) // sort by length (desc) to avoid conflicts
     {
         return b.length - a.length; // ASC -> a - b; DESC -> b - a
     });
 };
-emoji._initUnicodes();
+emoji._initIndexes();
 
 //
 // Methods
@@ -1932,8 +1924,6 @@ emoji.unicodeToShortcut = emoji.replaceUnicodeCharacterWithShortcut = function (
 {
     var t = text;
 //    t = t.replace(new RegExp("️", "gim"), ""); // there's a character (U+FE0F - http://codepoints.net/U+FE0F) in regex pattern, trust me :)
-//    for (var i = 0; i < emoji.list.length; i++)
-//        t = t.replace(new RegExp(emoji.list[i].unicode, "gim"), emoji.list[i].shortcuts[0]);
     for (var i = 0; i < emoji._unicodesIndex.length; i++)
         t = t.replace(new RegExp(emoji._unicodesIndex[i], "gim"), emoji._unicodes[emoji._unicodesIndex[i]]);    
     return t;
@@ -1946,20 +1936,15 @@ emoji.textToImage = function (text)
     return t;
 };
 
-
 emoji.textContainsOnlyEmoji = function (text)
 {
     var t = emoji.shortcutToUnicode(text);
 //    t.replace(new RegExp("️", "gim"), ""); // there's a character (U+FE0F - http://codepoints.net/U+FE0F) in regex pattern, trust me :)
-//    t = t.replace(/\s/gim, ""); // remove any space
-//    for (var i = 0; i < emoji.list.length; i++)
-//        t = t.replace(new RegExp(emoji.list[i].unicode, "gim"), "");
     t = t.replace(/\s/gim, ""); // remove any space
     for (var i = 0; i < emoji._unicodesIndex.length; i++)
         t = t.replace(new RegExp(emoji._unicodesIndex[i], "gim"), "");
     return (t.length === 0);
 };
-
 
 //
 // UI - Editor/selector
