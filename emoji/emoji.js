@@ -1989,7 +1989,7 @@ emoji.getSelector = function (onSelect)
             if (addToRecentlyUsedOnSelect)
                 addToRecentlyUsed(e);
             if (onSelect instanceof Function)
-                onSelect(e.shortcuts[0], emoji);
+                onSelect(e.shortcuts[0], e);
         });
     };
     var setCurrentTab = function (name)
