@@ -105,7 +105,7 @@ app.drawCameraImage = function ()
     var canvasWidth = videoWidth * ratio;
     var canvasHeight = videoHeight * ratio;
     var left = (containerWidth - canvasWidth) / 2;
-    var top = (containerHeight - canvasHeight) / 2;
+    var top = 0; //(containerHeight - canvasHeight) / 2;
     cameraCanvas.width = canvasWidth;
     cameraCanvas.height = canvasHeight;
     
