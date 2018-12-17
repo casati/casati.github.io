@@ -4,28 +4,34 @@
     <meta charset="utf-8">
     <title>Matteo Casati</title>
     <meta name="author" content="Matteo Casati" />	
+    <meta name="robots" content="index,follow" />
+    <meta name="revisit-after" content="1 days" />
+    <meta name="apple-mobile-web-app-title" content="Matteo Casati">
+    <meta name="application-name" content="Matteo Casati">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="handheldFriendly" content="true">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+    <meta name="format-detection" content="telephone=no" />
     <meta http-equiv="cleartype" content="on">        
     
-    <link rel="apple-touch-icon" sizes="57x57" href="/img/icons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/img/icons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/img/icons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/img/icons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/img/icons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/img/icons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/img/icons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/img/icons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/img/icons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/img/icons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/img/icons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    
+    <link rel="apple-touch-icon" sizes="57x57" href="/app-icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/app-icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/app-icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/app-icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/app-icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/app-icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/app-icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/app-icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/app-icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/app-icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/app-icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/app-icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/app-icon/favicon-16x16.png">
+    <link rel="manifest" href="/app-icon/manifest.json">
     
     <style>
+        @import url('https://fonts.googleapis.com/css?family=Nunito:300,800');
         *
         { 
             margin: 0; 
@@ -38,184 +44,81 @@
             box-sizing: content-box;
             vertical-align: top; 
             text-align: left; 
-            font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+            font-family: "Nunito", sans-serif;  
             line-height: 1.3em;
+            color: #45434d;
         }
-        html, body { height: 100%; width: 100%; }
-        .cube
-        {
-            position: relative;
-            width: 160px;
-            height: 160px;
-            margin: 70px auto;    
-            -webkit-transform-style: preserve-3d;
-            -moz-transform-style: preserve-3d;
-            -ms-transform-style: preserve-3d;
-            -o-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-        }
-        .cube .face
-        {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            color: #fff;
-            line-height: 160px;
-            text-align: center;
-            font-size: 70px;
-            text-shadow: 2px 2px 2px rgba(0, 3, 0, 0.2);
-        }
+        html, body { height: 100%; width: 100%; overflow-x: hidden; }        
+        h1 { margin-top: 30px; font-size: 100px; text-align: center; font-weight: 800; letter-spacing: -11px; color: #fff; text-shadow: -2px 0 3px #e61d4f, 0 2px 3px #fd4f1f, 2px 0 3px #fd4f1f, 0 -2px 3px #e61d4f; }
+        p { font-size: 20px; text-align: center; font-weight: 300; margin: 30px 0; }
+        p a { display: inline-block; color: #fff; text-decoration: none; text-transform: uppercase; padding: 0 30px; line-height: 50px; font-size: 16px; font-weight: 800; background-image: linear-gradient(to bottom right, #e61d4f, #fd4f1f); border: 0; border-radius: 4px; box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12); }
+        p a:hover { background: #fd4f1f; }
+        p a:active { background: #e61d4f; box-shadow: inset 0 2px 2px 0 rgba(0,0,0,.2); }
 
-        .cube .face.face1
-        {
-            background-color: #228ae6;
-            -webkit-transform: translateZ(80px);
-            -moz-transform: translateZ(80px);
-            -ms-transform: translateZ(80px);
-            -o-transform: translateZ(80px);
-            transform: translateZ(80px);    
-        }
-        .cube .face.face2
-        {
-            background-color: #37b24d;
-            -webkit-transform: rotateX(90deg) translateZ(80px);
-            -moz-transform: rotateX(90deg) translateZ(80px);
-            -ms-transform: rotateX(90deg) translateZ(80px);
-            -o-transform: rotateX(90deg) translateZ(80px);
-            transform: rotateX(90deg) translateZ(80px);
-        }
-        .cube .face.face3
-        {
-            background-color: #fab005;
-            -webkit-transform: rotateY(90deg) translateZ(80px);
-            -moz-transform: rotateY(90deg) translateZ(80px);
-            -ms-transform: rotateY(90deg) translateZ(80px);
-            -o-transform: rotateY(90deg) translateZ(80px);
-            transform: rotateY(90deg) translateZ(80px);
-        }
-        .cube .face.face4
-        {
-            background-color: #f76707;
-            -webkit-transform: rotateY(180deg) translateZ(80px);
-            -moz-transform: rotateY(180deg) translateZ(80px);
-            -ms-transform: rotateY(180deg) translateZ(80px);
-            -o-transform: rotateY(180deg) translateZ(80px);
-            transform: rotateY(180deg) translateZ(80px);
-        }
-        .cube .face.face5
-        {
-            background-color: #d6336c;
-            -webkit-transform: rotateY(-90deg) translateZ(80px);
-            -moz-transform: rotateY(-90deg) translateZ(80px);
-            -ms-transform: rotateY(-90deg) translateZ(80px);
-            -o-transform: rotateY(-90deg) translateZ(80px);
-            transform: rotateY(-90deg) translateZ(80px);
-        }
-        .cube .face.face6
-        {
-            background-color: #7048e8;
-            -webkit-transform: rotateX(-90deg) translateZ(80px);
-            -moz-transform: rotateX(-90deg) translateZ(80px);
-            -ms-transform: rotateX(-90deg) translateZ(80px);
-            -o-transform: rotateX(-90deg) translateZ(80px);
-            transform: rotateX(-90deg) translateZ(80px);
-        }
+        .space { width: 100%; max-width: 500px; height: 200px; margin: 5px auto; font-size: 0; }
+        .ghost { width: 100px; height: 150px; position: relative; animation: moveGhost 10s infinite linear; }
+        .ghost .body { width: 100px; height: 100px; border-radius: 50% 50% 0 0; background-image: linear-gradient(to bottom, #e61d4f, #fd391f); }
+        .ghost .body::before, .ghost .body::after { content: ""; position: absolute; width: 32px; height: 40px; background: #fff; border-radius: 100%; top: 25px; left: 20px; z-index: 1; }
+        .ghost .body::after { left: 48px; }
+        .ghost .body .eyes::before, .ghost .body .eyes::after { content: ""; position: absolute; width: 12px; height: 12px; background: #111; border-radius: 100%; top: 42px; left: 28px; z-index: 2; box-shadow: inset -1px -1px 7px 1px rgba(255, 255, 255, .4); animation: moveEyes 2s infinite ease-in-out; }
+        .ghost .body .eyes::after { left: 53px; }
+        .ghost .body .leg { width: 25px; height: 25px; position: absolute; top: 100px; border-bottom-left-radius: 25px; border-bottom-right-radius: 25px; background-image: linear-gradient(to bottom, #fd391f, #ff5a2c); animation: moveLegs 1.4s infinite linear; }
+        .ghost .body .leg2 { left: 25px; height: 50px; animation-delay: .6s; }
+        .ghost .body .leg3 { left: 50px; animation-delay: 1s; }
+        .ghost .body .leg4 { left: 75px; animation-delay: .4s; }
         
-        .error
+        @keyframes moveEyes 
         {
-            width: 300px;
-            padding: 10px;
-            margin: 10px auto;            
+            0%, 100% { transform: translateX(-4px) translateY(-6px); }
+            50% { transform: translateX(7px) translateY(1px); }            
         }
-        .error h1
+        @keyframes moveLegs 
         {
-            font-size: 80px;
-            text-align: center;
-            color: #868e96;
-            margin-bottom: 20px;
+            0%, 100% { height: 25px; }
+            50% { height: 50px; }            
         }
-        .error p
+        @keyframes moveGhost
         {
-            font-size: 12px;
-            text-align: center;
-            color: #868e96;
-            margin-bottom: 30px;
-        }
-        .error p a
-        {
-            display: inline-block;
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            padding: 0 20px;
-            line-height: 40px;
-            font-size: 14px;
-            font-weight: 600;
-            background: #228ae6;
-            border: 0;
-            border-radius: 4px;
-            box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
-        }
-        .error p a:hover
-        {
-            background: #329af0;
-        }
-        .error p a:active
-        {
-            background: #1b6ec2;
-            box-shadow: inset 0 2px 2px 0 rgba(0,0,0,.2)
+            0%, 100% { top: 20px; left: -70px; }
+            5% { top: -10px; }
+            10% { top: 20px; }
+            15% { top: -5px; }
+            20% { top: 30px; }
+            25% { top: 5px; left: 20%; }
+            30% { top: 25px; }
+            35% { top: -8px; }
+            40% { top: 40px; }
+            45% { top: -5px; left: 60%; }
+            50% { top: 40px; }
+            55% { top: 5px; left: 90%; } 
+            60% { top: 25px; }
+            65% { top: 0px; left: 70%; }
+            70% { top: 35px; }
+            75% { top: -5px; }
+            80% { top: 20px; left: 45%; }
+            85% { top: 5px; }
+            90% { top: 40px; }
+            95% { top: 10px; }
         }
     </style>
-    
-    <script src="js/libs.js"></script>
     
 </head>
 <body>
     
-    <div class="cube"></div>
-    <div class="error">
-        <h1>Oops!</h1>
-        <p>Sembra che la pagina richiesta non esista...</p>
-        <p><a href="index.html">riparti da qui</a></p>        
+    <h1>Oops!</h1>
+    <div class="space">
+        <div class="ghost">
+            <div class="body">
+                <div class="eyes"></div>
+                <div class="leg leg1"></div>
+                <div class="leg leg2"></div>
+                <div class="leg leg3"></div>
+                <div class="leg leg4"></div>
+            </div>                
+        </div>
     </div>
-    
-    <script>
-        var $cube = $(".cube");
-        for (var i = 1; i <= 6; i++)
-            $("<div>").appendTo($cube).addClass("face").addClass("face" + i).html("404");
-        var orientateCube = function (x, y)
-        {
-            $cube.css("transform", "rotateX(" + x + "deg) rotateY(" + y + "deg)");
-        };
-        $(window).on("mousemove", function (event)
-        {
-            var x = (event.pageY) / 160 * 90;
-            var y = (event.pageX) / 160 * 90;
-            orientateCube(x, y); 
-        });    
-        window.addEventListener("deviceorientation", function (event)
-        {
-            var x, y;        
-            if (window.orientation == 0)
-            {
-                x = event.beta;
-                y = event.gamma;
-            }
-            else if (window.orientation == 90)
-            {
-                x = event.gamma;
-                y = event.beta;
-            }
-            else
-            {
-                x = event.gamma * -1;
-                y = event.beta * -1;
-            }
-            x = (x * 2);        
-            y = (y * 2);
-            orientateCube(x, y);        
-        }, true);     
-    </script>
-    
+    <p>404 - PAGINA NON TROVATA</p>
+    <p><a href="/">riparti da qui</a></p>
+
 </body>
 </html>

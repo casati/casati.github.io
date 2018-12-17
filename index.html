@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <title>Matteo Casati</title>
-    <meta name="description" content="Sono Matteo Casati, consulente freelance (.NET software architect e project manager) nell'area di Milano e mi occupo della progettazione, del design e dello sviluppo di siti e applicazioni web e mobile (iOS/Android)" />
     <meta name="author" content="Matteo Casati" />	
     <meta name="robots" content="index,follow" />
     <meta name="revisit-after" content="1 days" />
@@ -16,324 +15,140 @@
     <meta name="format-detection" content="telephone=no" />
     <meta http-equiv="cleartype" content="on">        
     
-    <link rel="apple-touch-icon" sizes="57x57" href="/img/icons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/img/icons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/img/icons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/img/icons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/img/icons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/img/icons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/img/icons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/img/icons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/img/icons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/img/icons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/img/icons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="57x57" href="/app-icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/app-icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/app-icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/app-icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/app-icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/app-icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/app-icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/app-icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/app-icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/app-icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/app-icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/app-icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/app-icon/favicon-16x16.png">
+    <link rel="manifest" href="/app-icon/manifest.json">
     
-    <link rel="stylesheet" href="css/hp.css">    
-    <script src="js/libs.js"></script>
+    <link rel="stylesheet" href="/hp.css">    
     
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121278-7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-121278-7');
+    </script>
+
 </head>
 <body>
     
     <header>
-        <div class="content">
-            <h1>Ciao, sono <strong>Matteo!</strong></h1>        
-            <hr>
-            <h2>Progetto, disegno, programmo, scrivo.</h2>
-            <span class="icon-scroll"></span>
-        </div>
-    </header>
-    <script>     
-        /*
-        var $header = $("header");
-        var $background, 
-            backgroundPositionX,
-            backgroundYPosition,
-            backgroundDeltaX,
-            backgroundDeltaY,
-            backgroundDragStartX,
-            backgroundDragStartY,
-            backgroundDragActive;
-       
-        var onBackgroundDragStart = function (event)
-        {
-            backgroundDragActive = true;
-            backgroundDragStartX = (event.originalEvent.pageX - $header.offset().left) - backgroundXPosition;
-            backgroundDragStartY = (event.originalEvent.pageY - $header.offset().top) - backgroundYPosition;
-            console.log("BackgroundDrag - START: " + backgroundDragStartX + ", " + backgroundDragStartY);            
-        };
-        var onBackgroundDragMove = function (event)
-        {
-            if (!backgroundDragActive)
-                return;              
-            backgroundXPosition = Math.min(0, Math.max(backgroundDeltaX, (event.originalEvent.pageX - $header.offset().left - backgroundDragStartX)));
-            backgroundYPosition =  Math.min(0, Math.max(backgroundDeltaY, (event.originalEvent.pageY - $header.offset().top - backgroundDragStartY)));
-            console.log("BackgroundDrag - MOVE: " + backgroundXPosition + ", " + backgroundYPosition);
-            $background.css({ transform: "translate(" + backgroundXPosition + "px, " + backgroundYPosition + "px)" });
-            return false;
-        };
-        var onBackgroundDragStop = function (event)
-        {
-            backgroundDragActive = false;              
-            console.log("BackgroundDrag - STOP");            
-        };
-        var initBackground = function ()
-        {        
-            $header
-                .off("mousedown mouseover", onBackgroundDragStart)
-                .off("mouseup mouseout", onBackgroundDragStop)
-                .off("mousemove", onBackgroundDragMove);
-            
-            var backgroundNaturalWidth = $background.prop("naturalWidth");
-            var backgroundNaturalHeight = $background.prop("naturalHeight");            
-            var backgroundContainerWidth = $header.width();
-            var backgroundContainerHeight = $header.height();
-            
-            var backgroundZoom = Math.max(backgroundContainerWidth / backgroundNaturalWidth, backgroundContainerHeight / backgroundNaturalHeight);
-            
-            var backgroundWidth = Math.round(backgroundNaturalWidth * backgroundZoom);
-            var backgroundHeight = Math.round(backgroundNaturalHeight * backgroundZoom);
-            backgroundDeltaX = backgroundContainerWidth - backgroundWidth;
-            backgroundDeltaY = backgroundContainerHeight - backgroundHeight
-            backgroundXPosition = Math.round(backgroundDeltaX / 2);
-            backgroundYPosition = Math.round(backgroundDeltaY / 2);
-            $background
-                .width(backgroundWidth)
-                .height(backgroundHeight)
-                .css({ transform: "translate(" + backgroundXPosition + "px, " + backgroundYPosition + "px)" });
-            $header
-                .on("mousedown mouseover", onBackgroundDragStart)
-                .on("mouseup mouseout", onBackgroundDragStop)
-                .on("mousemove", onBackgroundDragMove);
-        };
-        $background = $("<img>").attr("src", "img/background_DEBUG.jpg").on("load", initBackground).attr("draggable", false).addClass("background").appendTo($header);        
-        $(window)
-            .on("resize", initBackground)
-            .on("deviceorientation", function (event)
-            {
-                var e = event.originalEvent;
-//                var x, y;        
-//                if (window.orientation == 0)
-//                {                    
-//                    x = e.beta;
-//                    y = e.gamma;
-//                }
-//                else if (window.orientation == 90)
-//                {
-//                    x = e.gamma;
-//                    y = e.beta;
-//                }
-//                else
-//                {
-//                    x = e.gamma * -1;
-//                    y = e.beta * -1;
-//                }
-                console.log("orientation: " + window.orientation + "; alpha: " + e.alpha + "; beta: " + e.beta + "; gamma: " + e.gamma);        
-            }); 
-        */
-    </script>
-    
-    <section>
-        <div class="content">
-            <h1>Esperienze</h1>
-            <hr>
-            <h2>Il Design, ASP.NET, C#, HTML5, CSS3, JavaScript e lo sviluppo di App Web &amp; Mobile sono il mio lavoro.<br><br>E la mia passione.</h2>
-            <p>Lavoro come <strong>consulente freelance in qualità di software architect e project manager</strong> nell'area di Milano e mi occupo principalmente della realizzazione di siti e applicazioni web e per mobile.</p>
-            <p>Ho iniziato la carriera informatica negli anni '90, programmando in ambiente MS-DOS con GW-Basic, quindi in Windows con Visual Basic che ho utilizzato dalla versione 4 alla 6.</p>
-            <p>Nel 1998 mi sono avvicinato al mondo Web, a partire da HTML, JavaScript e ASP, per poi passare &mdash; con l'arrivo della versione 1.0 del .NET Framework &mdash; ad ASP.NET e C#, tecnologie che seguo tutt'oggi con grande interesse e che utilizzo come principale piaffaforma di sviluppo lato server.</p>
-            <p>Nella mia esperienza lavorativa ho avuto modo di confrontarmi con svariate tipologie di progetto (e-commerce, corporate web sites, intranet, extranet e mobile) e di architettura (data-centric, distributed application e service oriented architecture).</p>
-            <p>Fin dai loro esordi ho abbracciato i nuovi standard per il Web (HTML5, CSS3 e ECMAScript 5) e adottato librerie e framework (come jQuery, LESS, ecc.) per lo sviluppo di applicazioni caratterizzate da interfacce moderne, accattivanti, dinamiche e fluide.</p>
-            <p>La crescente diffusione di dispositivi di tipo touch (tablet e smartphone) mi ha dato la possibilità di sviluppare applicazioni &mdash;  native/ibride e web app &mdash; per Apple iOS (iPhone, iPad, iPod) e per Google Android.</p>            
-        </div>
-    </section>
-    
-    <!-- TODO: community, chatta, industria 4.0, ecc. -->
-    
-    <section>
-        <div class="content">
-            <h1>Pubblicazioni</h1>
-            <hr>
-            <p>Sono stato docente in corsi di formazione superiore in ambito informatico e ho all'attivo diversi progetti editoriali, sia come autore che come technical proofreader che come revisore.</p>            
-            <div class="books">
-                <div class="books-carousel">
-                    <div class="book">                
-                        <img class="cover" src="img/cover-html5-espresso.jpg" alt="HTML5 con CSS3 e ECMAScript 5 - Espresso" />
-                        <p>Coautore</p>                
-                    </div>
-                    <div class="book">                
-                        <div><img class="cover" src="img/cover-aspnet-in-practice.jpg" alt="ASP.NET 4.0 in Practice" /></div>
-                        <p>Technical Proofreader</p>                
-                    </div>
-                    <div class="book">
-                        <div class="cover"><img class="cover" src="img/cover-aspnet4.jpg" alt="ASP.NET 4.0 in C# e VB" /></div>
-                        <p>Revisore della versione italiana</p>                
-                    </div>
-                    <div class="book">                
-                        <img class="cover" src="img/cover-csharp4.jpg" alt="C# 4 E .NET 4" />
-                        <p>Revisore della versione italiana</p>
-                    </div>
-                </div>
+        <div class="curtain"><h1>Matteo Casati</h1></div>        
+        <section>
+            <div class="content">
+                <div class="hello">Hello<span class="dot">.</span></div>
+                <div class="about">I'm a freelance full-stack web developer.</div>                                           
             </div>
-            <script>
-                $(".books-carousel").owlCarousel({
-                    loop: true,
-                    margin: 15,
-                    nav: false,
-                    autoplay: true,
-                    autoplayTimeout: 2000,
-                    autoplayHoverPause: true,
-                    responsive: 
-                    {
-                        0: { items: 1 },
-                        450: { items: 2 },
-                        600: { items: 3 }
-                    }
-                });
-            </script>
-        </div>            
-    </section>
+            <div class="icon-scroll"></div>            
+        </section>        
+    </header>
     
-    <!-- TODO: contatti, instagram?, ecc. -->
+    <section>        
+        <div class="content">
+            <p class="main">Sono un consulente informatico, lavoro nell'area di Milano e mi occupo di applicazioni Internet, curandone ogni aspetto dello sviluppo, dall'analisi dei requisiti al disegno dell'interfaccia utente, dalla progettazione iniziale alla programmazione delle logiche funzionali e di accesso ai dati.</p>
+        </div>
+    </section>
+
+    <hr>
+    
     <section>
-        <div class="instagram"></div>
+        <div class="content">
+            <h2>Competenze</h2>
+            <p>Le mie competenze coprono l'intero ciclo di realizzazione di un'applicazione e possono essere schematizzate in tre parti fondamentali:</p>  
+        </div> 
+        <div class="app-anatomy" id="appAnatomyContainer">
+            <div class="app-layer app-backend"></div>
+            <div class="app-layer app-frontend" id="appAnatomyFrontend"></div>
+            <div class="app-layer app-design" id="appAnatomyDesign"></div>                
+        </div>
         <script>
-            var showInstagram = function (data)
+            var container = document.getElementById("appAnatomyContainer");
+            var frontend = document.getElementById("appAnatomyFrontend");
+            var design = document.getElementById("appAnatomyDesign");            
+            var moveLayers = function ()
             {
-                var renderizeItem = function (item)
-                {
-                    //
-                    // TODO
-                    //
-                    switch (item.type)
-                    {
-                        case "image":
-                            $("<img>").appendTo($(".instagram")).attr("src", item.images.low_resolution.url);
-                            break;
-                        case "video":
-                            $("<video>").appendTo($(".instagram")).attr("src", item.videos.low_resolution.url);
-                            break;
-                    }
-                }
+                var end = container.offsetTop;
+                var start = end + container.clientHeight - innerHeight;
+                var progress = 100 - (scrollY - start) * 100 / (end - start);
+                progress = Math.min(progress, 100);
+                progress = Math.max(progress, 0);
                 
-                // START DEBUG VIDEO
-                data.items.unshift({
-                          "tags": [
-                            "freedom",
-                            "moleskine",
-                            "sketch"
-                          ],
-                          "id": "1437233158990797986_190523929",
-                          "user": {
-                            "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/13267464_814413908694464_802389055_a.jpg",
-                            "full_name": "Matteo Casati",
-                            "id": "190523929",
-                            "username": "m_casati"
-                          },
-                          "users_in_photo": [
+                frontend.style.transform = "translateX(" + (6 / 100 * progress) + "%) translateY(" + (-12 / 100 * progress) + "%)"; 
 
-                          ],
-                          "user_has_liked": false,
-                          "comments": {
-                            "count": 3
-                          },
-                          "filter": "Ludwig",
-                          "type": "video",
-                          "caption": {
-                            "text": "#moleskine #sketch #freedom",
-                            "id": "17870789815039247",
-                            "created_time": "1485551565",
-                            "from": {
-                              "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/13267464_814413908694464_802389055_a.jpg",
-                              "full_name": "Matteo Casati",
-                              "id": "190523929",
-                              "username": "m_casati"
-                            }
-                          },
-                          "link": "https://www.instagram.com/p/BPyE_F9Dxyi/",
-                          "videos": {
-                            "low_resolution": {
-                              "width": 480,
-                              "height": 480,
-                              "url": "https://scontent.cdninstagram.com/t50.2886-16/16328082_393653297635855_7763134373699780608_n.mp4"
-                            },
-                            "low_bandwidth": {
-                              "width": 480,
-                              "height": 480,
-                              "url": "https://scontent.cdninstagram.com/t50.2886-16/16328082_393653297635855_7763134373699780608_n.mp4"
-                            },
-                            "standard_resolution": {
-                              "width": 640,
-                              "height": 640,
-                              "url": "https://scontent.cdninstagram.com/t50.2886-16/16379141_1414396205237455_2094176966348374016_n.mp4"
-                            }
-                          },
-                          "location": null,
-                          "attribution": null,
-                          "images": {
-                            "low_resolution": {
-                              "width": 320,
-                              "height": 320,
-                              "url": "https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/16110694_978400618960234_3754455140791222272_n.jpg?ig_cache_key=MTQzNzIzMzE1ODk5MDc5Nzk4Ng%3D%3D.2"
-                            },
-                            "thumbnail": {
-                              "width": 150,
-                              "height": 150,
-                              "url": "https://scontent.cdninstagram.com/t51.2885-15/s150x150/e15/16110694_978400618960234_3754455140791222272_n.jpg?ig_cache_key=MTQzNzIzMzE1ODk5MDc5Nzk4Ng%3D%3D.2"
-                            },
-                            "standard_resolution": {
-                              "width": 640,
-                              "height": 640,
-                              "url": "https://scontent.cdninstagram.com/t51.2885-15/s640x640/e15/16110694_978400618960234_3754455140791222272_n.jpg?ig_cache_key=MTQzNzIzMzE1ODk5MDc5Nzk4Ng%3D%3D.2"
-                            }
-                          },
-                          "created_time": "1485551565",
-                          "likes": {
-                            "count": 13
-                          }
-                        });
-                // END DEBUG VIDEO
-                
-                for (var i = 0; i < data.items.length; i++)
-                    renderizeItem(data.items[i]);
-                
-            };
-            
-            $.ajax(
-            { 
-                url: "https://www.instagram.com/m_casati/media/",
-                success: showInstagram
-            });
-        </script>
-
+                design.style.transform = "translateX(" + (6 / 100 * progress) + "%) translateY(" + (-25 / 100 * progress) + "%)";
+                design.style.opacity = Math.min(1, progress / 10);
+            };            
+            addEventListener("scroll", function () { requestAnimationFrame(moveLayers); });
+        </script>         
+        <div class="content">
+            <h4><span class="layer-number">01.</span>Design</h4>
+            <p>Il design &mdash; o <em>progettazione</em> &mdash; è la prima e più importante fase nella realizzazione di un'applicazione: i requisiti vengono analizzati e razionalizzati, sia da un punto di vista logico-funzionale che grafico-stilistico.</p>
+            <blockquote>design è ogni strategia volta a cambiare la situazione esistente in una migliore<cite>&mdash; Herbert Simon</cite></blockquote>
+            <p class="keywords"><strong>PAROLE CHIAVE:</strong> progettazione, oop, object oriented programming, analisi, specifiche, architettura delle informazioni, diagrammi, flussi, uml, patterns, photoshop, illustrator, grafica, colori, icone, font, fotografia, template, immagini</p>            
+        </div>
+        <div class="content">
+            <h4><span class="layer-number">02.</span>Frontend</h4>
+            <p>Il frontend &mdash; spesso identificato con l'acronimo <em>FE</em> &mdash; è la parte di applicazione con cui l'utente è a diretto contatto: i contenuti sono visualizzati secondo le direttive grafiche del design e vengono gestite le interazioni dell'utente (come il click di un pulsante, la compilazione di un form per la raccolta dei dati, ecc.), prestando particolare attenzione all'usabilità dell'interfaccia.</p>
+            <p class="keywords"><strong>PAROLE CHIAVE:</strong> client, browser, html, js, javascript, css, typescript, input, form, animazioni, navigazione, responsive, ui, interfaccia utente, ajax, jquery, vue, angular, react, bootstrap, seo, usabilità, ux, user experience</p> 
+        </div> 
+        <div class="content">
+            <h4><span class="layer-number">03.</span>Backend</h4>
+            <p>Il backend &mdash; <em>BE</em> &mdash; è la parte più "nascosta" dell'applicazione (ma non per questo meno importante!); tipicamente risiede sul server (anziché sul dispositivo dell'utente) e si occupa di elaborare i dati, gestire i flussi di informazioni (ad esempio da e verso il front end) e l'integrazione con altri sistemi.</p>
+            <p class="keywords"><strong>PAROLE CHIAVE:</strong> server, database, web service, data access, orm, performance, cloud, business logic, c#, .net, php, java, mysql, sql server, linux, windows, api, rest</p>            
+        </div>                 
     </section>
-    
-    
-    <footer>            
-        <p>&copy; Copyright 2009-2016 Matteo Casati</p>
-        <p>Partita IVA: IT 06568450966</p>                
-        <p><em>Tutti i marchi sono dei rispettivi proprietari.</em></p>        
+
+    <hr>
+
+    <section>
+        <div class="content">
+            <h2>Esperienze</h2>
+            <figure class="vcard"><img src="/img/matteo-casati.jpg" alt="Matteo Casati"></figure>
+            <p>Ho iniziato la carriera informatica programmando in Visual Basic e, alla fine degli anni '90, mi sono avvicinato al Web: <strong>HTML, JavaScript, CSS</strong> e ASP per poi passare &mdash; con l'arrivo della versione 1.0 del .NET Framework &mdash; ad <strong>ASP.NET</strong> e <strong>C#</strong>, tecnologie che seguo tutt'oggi con grande interesse e che utilizzo come principale piattaforma di sviluppo lato server.<br>Fin dai loro esordi ho abbracciato i nuovi <strong>standard per il Web</strong> (HTML5, CSS3 e ECMAScript) e adottato librerie e framework per lo sviluppo di applicazioni caratterizzate da interfacce moderne, fluide, accattivanti e dinamiche.</p>
+            <p>Nella mia esperienza lavorativa ho avuto modo di confrontarmi con <strong>svariate tipologie di progetto</strong> (e-commerce, corporate web site, social network, intranet, extranet, app native/ibride per mobile, PWA, IoT, ecc.) <strong>e di architettura</strong> (data-centric, distributed application, serverless e service oriented architecture).</p>
+            <h3>Pubblicazioni</h3>
+            <p>Sono stato <strong>docente in corsi di formazione</strong> superiore e per aziende e ho all'attivo diversi <strong>progetti editoriali</strong> con case editrici come <a href="https://www.hoepli.it/" target="_blank">Hoepli</a> e <a href="https://www.manning.com/" target="_blank">Manning Publications</a>, sia come autore che come revisore.</p>
+            <ul class="books">
+                <li><img src="/img/cover-html5-espresso.jpg" alt="HTML5 con CSS3 e ECMAScript 5 - Espresso" title="Autore di 'HTML5 con CSS3 e ECMAScript 5 - Espresso'"></li>
+                <li><img src="/img/cover-aspnet-in-practice.jpg" alt="ASP.NET 4.0 in Practice" title="Technical Proofreader di 'ASP.NET 4.0 in Practice'"></li>
+                <li><img src="/img/cover-aspnet4.jpg" alt="ASP.NET 4.0 in C# e VB" title="Revisore della versione italiana di 'ASP.NET 4.0 in C# e VB'"></li>
+                <li><img src="/img/cover-csharp4.jpg" alt="C# 4 E .NET 4" title="Revisore della versione italiana di 'C# 4 E .NET 4'"></li>                
+            </ul>
+            <p>Come membro dello <a href="http://www.aspitalia.com/autori/Matteo_Casati.aspx" target="_blank" rel="me">staff di ASPItalia.com</a> e primo Content Manager di <a href="http://www.html5italia.com/" target="_blank">HTML5Italia.com</a> ho pubblicato <strong>decine di articoli e script</strong> e offerto il mio contributo partecipando ai <strong>forum</strong> della community.</p>
+        </div>
+    </section>
+
+    <section class="contacts">
+        <div class="content">
+            <h2>Contatti</h2>
+            <p>Per maggiori informazioni e magari prendere un caffè insieme, contattami via <a href="&#109;&#097;&#105;&#108;&#116;&#111;:info&#064;mcasati&#46;com" class="email">email</a> o <a href="skype:m.casati?call" class="skype">Skype</a> oppure attraverso i principali social network:</p>
+            <ul class="social">
+                <li><a href="https://www.instagram.com/m_casati/" class="instagram" rel="me">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/casati/" class="linkedin" rel="me">LinkedIn</a></li>                    
+                <li><a href="https://twitter.com/m_casati/" class="twitter" rel="me">Twitter</a></li>
+                <li><a href="https://www.facebook.com/matteo.casati" class="facebook" rel="me">Facebook</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>          
+        <div class="content">  
+            <p>&copy; Copyright Matteo Casati</p>
+            <p>Partita IVA: IT 06568450966</p>                
+            <p><em>Tutti i marchi sono dei rispettivi proprietari.</em></p>  
+        </div>
     </footer>
 
-    <script>
-        
-        // Google Analytics
-        var _gaq = _gaq || [];
-        _gaq.push(["_setAccount", "UA-121278-7"]);
-        _gaq.push(["_trackPageview"]);
-        (function ()
-        {
-            var ga = document.createElement("script");
-            ga.type = "text/javascript";
-            ga.async = true;
-            ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(ga, s);
-        })();
-
-    </script>
 </body>
 </html>

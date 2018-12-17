@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,600');
+*
+{ 
+    margin: 0; 
+    padding: 0; 
+    outline: none; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    -ms-box-sizing: border-box; 
+    box-sizing: border-box; 
+    vertical-align: top; 
+    text-align: left; 
+    font-family: "Montserrat", sans-serif; 
+}
+html, body { height: 100%; width: 100%; }
+body 
+{
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;    
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(255,255,255,0);
+	background: #fff;
+    color: #45434d;
+    font-size: 15px;     
+}
+
+
+section { width: 100%; overflow: hidden; }
+
+.content { max-width: 960px; padding: 1.2em; margin-left: auto; margin-right: auto; }
+
+a { color: #ef3940; text-decoration: none; }
+a:hover, a:active { text-decoration: underline; }
+
+p { text-align: justify; margin-top: 1em; margin-bottom: 1em; line-height: 1.6em; }
+p.main { color: #111; font-size: 1.1em; font-weight: 200; margin-bottom: 2em; border-top: 2px solid #e9ecee; padding-top: 2em; }
+
+/*
+hr { max-width: 7em; height: 0; margin: .5em auto; border: 0; border-bottom: .5em solid #ef3940; }
+*/
+hr { border: 0; max-width: 6em; height: .8em; margin: .5em auto; background-image: linear-gradient(to right, #e61d4f, #fd4f1f); }
+
+h2 { margin: 1em 0; color: #ef3940; text-align: center; font-weight: 200; font-size: 2.8em; text-transform: uppercase; letter-spacing: -2px; }
+h3 { margin-top: 1.5em; color: #ef3940; font-weight: 600; font-size: 1.5em; }
+h4 { font-size: 3em; color: #ef3940; letter-spacing: -.04em; position: relative; line-height: 3.5em; padding-left: .8em; font-weight: 600; }
+
+header { width: 100%; height: 100%; min-height: 600px; margin-bottom: 2em; color: #111; }
+
+header .curtain { padding: 50px; background-image: linear-gradient(to bottom right, #e61d4f, #fd4f1f); width: 100%; height: 100%; position: absolute; left: 0; top: 0; z-index: 1; animation-name: moveCurtain; animation-duration: 600ms; animation-delay: 1s; animation-timing-function: ease-in; animation-fill-mode: forwards; }
+header .curtain h1 { font-weight: 400; font-size: 24px; line-height: 50px; color: #fff; text-align: center; text-transform: uppercase; position: relative; top: 50%; transform: translateY(-50%); }
+header .curtain h1:before { content: ""; display: block; width: 100%; height: 100px; background: transparent url("/img/mc-logo-white.png") center center no-repeat; background-size: auto 100px; }
+
+header section { padding-top: 250px; padding-bottom: 60px; }
+header section { display: inline-block; width: 100%; height: 100%; position: relative; }
+header section .content { padding: 20px; position: relative; top: 50%; transform: translateY(-50%); }
+header section .hello { font-weight: 600; font-size: 76px; letter-spacing: -7px; margin-left: -7px; }
+header section .hello .dot { color: #ef3940; }
+header section .about { font-weight: 200; font-size: 22px; letter-spacing: -1px; }
+
+header section .icon-scroll { display: block; border: 2px solid #dde0e2; width: 24px; height: 42px; border-radius: 10px; margin: 10px auto; position: absolute; left: 50%; transform: translateX(-50%); bottom: 0; z-index: 0; }
+header section .icon-scroll:before { content: ''; width: 6px; height: 10px; position: absolute; left: 50%; z-index: 2; background-color: #dde0e2; transform: translateX(-50%); top: 6px; border-radius: 4px; animation: scroll 1.5s infinite; }
+
+.app-anatomy { width: 100%; height: 100vw; max-height: 700px; position: relative; }
+.app-anatomy .app-layer { width: 100%; height: 100%; position: absolute; bottom: 0%; left: 0; background-size: auto 80%; background-repeat: no-repeat; background-position: bottom center; }
+.app-anatomy .app-layer.app-backend { background-image: url("/img/app-backend.png"); }
+.app-anatomy .app-layer.app-frontend { background-image: url("/img/app-frontend.png"); transform: translateX(0); }
+.app-anatomy .app-layer.app-design { background-image: url("/img/app-design.png"); transform: translateX(0); }
+
+h4 .layer-number { position: absolute; font-size: 3.5em; color: #111; z-index: 0; opacity: .085; left: 0; font-weight: 600; }
+blockquote { color: #878e92; padding: 1em .2em 1em 3em; font-style: italic; position: relative; }
+blockquote:before { content: '\201C'; position: absolute; top: 0; left: 0.1em; font: 5em sans-serif; color: #e9ecee; }
+blockquote cite { display: block; font-weight: 600; margin: 1em 0; font-style: normal; font-size: .8em; }
+p.keywords { color: #878e92; font-weight: 200; font-size: .9em; margin-bottom: 2em; }
+
+figure.vcard { display: block; margin: -1em auto 2em auto; width: 180px; border-radius: 50%; }
+figure.vcard img { width: 100%; height: auto; border-radius: 50%; }
+
+ul.books { list-style-type: none; border: 2px solid transparent; font-size: 0; margin: 5% 0; }
+ul.books li { display: inline-block; width: 50%; border: 2px solid transparent; }
+ul.books li img { width: 100%; height: auto; }
+
+section.contacts:before { content: ""; display: block; width: 100%; height: 1em; background-image: linear-gradient(to right, #e61d4f, #fd4f1f); }
+section.contacts { background: #000; color: #fff; }
+section.contacts .content { background: transparent url("/img/coffee.jpeg") bottom 20px center no-repeat; background-size: auto 200px; padding-bottom: 240px; }
+section.contacts a.email, a.skype { padding-left: 1.7em; background-repeat: no-repeat; background-size: 1.5em auto; background-position: left center; font-weight: 600; }
+section.contacts a.email { background-image: url("/img/ico-email.png"); }
+section.contacts a.skype { background-image: url("/img/ico-skype.png"); }
+
+ul.social { list-style-type: none; font-size: 0; margin: 40px auto; height: 70px; max-width: 360px; }
+ul.social li { display: inline-block; width: 25%; text-align: center; }
+ul.social li a { width: 70px; height: 70px; display: block; margin: 0 auto; background-size: 90% auto; background-position: center center; background-repeat: no-repeat; }
+ul.social li a:hover, ul.social li a:active { background-color: #111; border-radius: 10px; }
+ul.social li a.instagram { background-image: url("/img/ico-instagram.png"); }
+ul.social li a.linkedin { background-image: url("/img/ico-linkedin.png"); }
+ul.social li a.twitter { background-image: url("/img/ico-twitter.png"); }
+ul.social li a.facebook { background-image: url("/img/ico-facebook.png"); }
+
+footer { background: #000; padding-bottom: 1em; }
+footer::before { content: ""; display: block; width: 100%; height: 2px; background-image: linear-gradient(to right, #e61d4f, #fd4f1f); margin-bottom: 1em; }
+footer p { color: #ccc; font-size: .8em; margin: .3em 0; }
+footer p em { color: #777; font-size: .8em; }
+
+/* animations */
+@keyframes moveCurtain 
+{
+    100% { height: 250px; }
+}
+@keyframes scroll 
+{ 
+    0% { opacity: 1; } 
+    100% { opacity: 0; top: 26px; }
+}
+
+/* tablet */
+@media screen and (min-width: 768px) 
+{
+    body { font-size: 16px; }
+    header section .hello { font-size: 120px; letter-spacing: -.1em;  }
+    header section .about { font-size: 34px; letter-spacing: -1px; }
+    p.main { font-size: 1.3em; }
+    ul.books li { width: 25%; }
+    figure.vcard { width: 230px; float: right; shape-outside: circle(50%); margin: .5em 0 1em 2em; }
+    section.contacts .content { background-position: bottom 30px right; background-size: 320px auto; padding-bottom: 30px; padding-right: 380px; color: #fff; }
+    ul.social { margin: 80px auto; }
+    ul.social li a { width: 80px; height: 80px; }
+}
+
+/* desktop */
+@media screen and (min-width: 1024px) 
+{
+    body { font-size: 18px; }
+}
+
