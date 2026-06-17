@@ -1,154 +1,252 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Matteo Casati</title>
-    <meta name="author" content="Matteo Casati" />	
-    <meta name="robots" content="index,follow" />
-    <meta name="revisit-after" content="1 days" />
-    <meta name="apple-mobile-web-app-title" content="Matteo Casati">
-    <meta name="application-name" content="Matteo Casati">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="handheldFriendly" content="true">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
-    <meta name="format-detection" content="telephone=no" />
-    <meta http-equiv="cleartype" content="on">        
-    
-    <link rel="apple-touch-icon" sizes="57x57" href="/app-icon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/app-icon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/app-icon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/app-icon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/app-icon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/app-icon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/app-icon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/app-icon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/app-icon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/app-icon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/app-icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/app-icon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/app-icon/favicon-16x16.png">
-    <link rel="manifest" href="/app-icon/manifest.json">
-    
-    <link rel="stylesheet" href="/hp.css">    
-    
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121278-7"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-121278-7');
-    </script>
+  <meta charset="utf-8">
+  <title>Matteo Casati — Full-Stack Developer & IT Consultant</title>
+  <meta name="description" content="Matteo Casati, IT consultant with 25+ years of full-stack experience: .NET, C#, IoT, Industry 4.0, cloud and web development.">
+  <meta name="author" content="Matteo Casati">
+  <meta name="robots" content="index,follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mcasati.com/">
+  <meta property="og:title" content="Matteo Casati — Full-Stack Developer & IT Consultant">
+  <meta property="og:description" content="Matteo Casati, IT consultant with 25+ years of full-stack experience: .NET, C#, IoT, Industry 4.0, cloud and web development.">
+  <meta property="og:image" content="https://mcasati.com/res/mc-logo.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Matteo Casati — Full-Stack Developer & IT Consultant">
+  <meta name="twitter:description" content="Matteo Casati, IT consultant with 25+ years of full-stack experience: .NET, C#, IoT, Industry 4.0, cloud and web development.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/res/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/res/favicon-16x16.png">
+  <script>
+    try {
+      const t = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', t);
+    } catch(e) {}
+  </script>
 
+  <link rel="stylesheet" href="/res/hp.css">
 </head>
 <body>
-    
-    <header>
-        <div class="curtain"><h1>Matteo Casati</h1></div>        
-        <section>
-            <div class="content">
-                <div class="hello">Hello<span class="dot">.</span></div>
-                <div class="about">I'm a freelance full-stack web developer.</div>                                           
-            </div>
-            <div class="icon-scroll"></div>            
-        </section>        
-    </header>
-    
-    <section>        
-        <div class="content">
-            <p class="main">Sono un consulente informatico, lavoro nell'area di Milano e mi occupo di applicazioni Internet, curandone ogni aspetto dello sviluppo, dall'analisi dei requisiti al disegno dell'interfaccia utente, dalla progettazione iniziale alla programmazione delle logiche funzionali e di accesso ai dati.</p>
-        </div>
-    </section>
 
-    <hr>
-    
-    <section>
-        <div class="content">
-            <h2>Competenze</h2>
-            <p>Le mie competenze coprono l'intero ciclo di realizzazione di un'applicazione e possono essere schematizzate in tre parti fondamentali:</p>  
-        </div> 
-        <div class="app-anatomy" id="appAnatomyContainer">
-            <div class="app-layer app-backend"></div>
-            <div class="app-layer app-frontend" id="appAnatomyFrontend"></div>
-            <div class="app-layer app-design" id="appAnatomyDesign"></div>                
-        </div>
-        <script>
-            var container = document.getElementById("appAnatomyContainer");
-            var frontend = document.getElementById("appAnatomyFrontend");
-            var design = document.getElementById("appAnatomyDesign");            
-            var moveLayers = function ()
-            {
-                var end = container.offsetTop;
-                var start = end + container.clientHeight - innerHeight;
-                var progress = 100 - (scrollY - start) * 100 / (end - start);
-                progress = Math.min(progress, 100);
-                progress = Math.max(progress, 0);
-                
-                frontend.style.transform = "translateX(" + (6 / 100 * progress) + "%) translateY(" + (-12 / 100 * progress) + "%)"; 
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo"><img src="/res/mc-logo.png" alt="Matteo Casati"></a>
+    <ul class="nav-links">
+      <li><a href="#about"      data-i18n="nav.about">About</a></li>
+      <li><a href="#skills"     data-i18n="nav.skills">Skills</a></li>
+      <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+      <li><a href="#contact"    data-i18n="nav.contact">Contact</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button id="lang-toggle" class="lang-toggle" aria-label="Cambia lingua / Switch language" title="Cambia lingua / Switch language">IT</button>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle colour theme" title="Switch theme">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</nav>
 
-                design.style.transform = "translateX(" + (6 / 100 * progress) + "%) translateY(" + (-25 / 100 * progress) + "%)";
-                design.style.opacity = Math.min(1, progress / 10);
-            };            
-            addEventListener("scroll", function () { requestAnimationFrame(moveLayers); });
-        </script>         
-        <div class="content">
-            <h4><span class="layer-number">01.</span>Design</h4>
-            <p>Il design &mdash; o <em>progettazione</em> &mdash; è la prima e più importante fase nella realizzazione di un'applicazione: i requisiti vengono analizzati e razionalizzati, sia da un punto di vista logico-funzionale che grafico-stilistico.</p>
-            <blockquote>design è ogni strategia volta a cambiare la situazione esistente in una migliore<cite>&mdash; Herbert Simon</cite></blockquote>
-            <p class="keywords"><strong>PAROLE CHIAVE:</strong> progettazione, oop, object oriented programming, analisi, specifiche, architettura delle informazioni, diagrammi, flussi, uml, patterns, photoshop, illustrator, grafica, colori, icone, font, fotografia, template, immagini</p>            
-        </div>
-        <div class="content">
-            <h4><span class="layer-number">02.</span>Frontend</h4>
-            <p>Il frontend &mdash; spesso identificato con l'acronimo <em>FE</em> &mdash; è la parte di applicazione con cui l'utente è a diretto contatto: i contenuti sono visualizzati secondo le direttive grafiche del design e vengono gestite le interazioni dell'utente (come il click di un pulsante, la compilazione di un form per la raccolta dei dati, ecc.), prestando particolare attenzione all'usabilità dell'interfaccia.</p>
-            <p class="keywords"><strong>PAROLE CHIAVE:</strong> client, browser, html, js, javascript, css, typescript, input, form, animazioni, navigazione, responsive, ui, interfaccia utente, ajax, jquery, vue, angular, react, bootstrap, seo, usabilità, ux, user experience</p> 
-        </div> 
-        <div class="content">
-            <h4><span class="layer-number">03.</span>Backend</h4>
-            <p>Il backend &mdash; <em>BE</em> &mdash; è la parte più "nascosta" dell'applicazione (ma non per questo meno importante!); tipicamente risiede sul server (anziché sul dispositivo dell'utente) e si occupa di elaborare i dati, gestire i flussi di informazioni (ad esempio da e verso il front end) e l'integrazione con altri sistemi.</p>
-            <p class="keywords"><strong>PAROLE CHIAVE:</strong> server, database, web service, data access, orm, performance, cloud, business logic, c#, .net, php, java, mysql, sql server, linux, windows, api, rest</p>            
-        </div>                 
-    </section>
+<!-- Hero -->
+<section id="hero">
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+  <div class="hero-orb"></div>
+  <div class="hero-inner">
+    <p class="hero-greeting" data-i18n="hero.greeting">// Hello, I'm</p>
+    <h1 class="hero-name"><span>Matteo<br>Casati</span></h1>
+    <p class="hero-role" data-i18n="hero.role">
+      Full-Stack Developer &amp; IT Consultant<br>
+      <strong>25+ years</strong> of digital experience<br>
+      <span class="hero-location">@ Milan, Italy</span>
+    </p>
+    <div class="hero-cta">
+      <a href="#about" class="btn-primary" data-i18n="hero.cta">Explore ↓</a>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-line"></div>
+    <span data-i18n="hero.scroll">scroll</span>
+  </div>
+</section>
 
-    <hr>
+<!-- About -->
+<section id="about">
+  <div class="container">
+    <div class="section-label reveal" data-i18n="about.label">01. About</div>
+    <p class="reveal" data-i18n="about.text">
+      I am an IT consultant with over <strong>25 years of experience</strong> in full-stack web application development. I oversee every aspect of a project: from requirements analysis to interface design, from architecture planning to the implementation of business logic and data access layers. I specialise in <strong>business process digitalisation</strong>, <strong>MES</strong> systems for industrial production management, and <strong>IoT &amp; Industry 4.0</strong> solutions for field data collection, analysis and valorisation.
+    </p>
+  </div>
+</section>
 
-    <section>
-        <div class="content">
-            <h2>Esperienze</h2>
-            <figure class="vcard"><img src="/img/matteo-casati.jpg" alt="Matteo Casati"></figure>
-            <p>Ho iniziato la carriera informatica programmando in Visual Basic e, alla fine degli anni '90, mi sono avvicinato al Web: <strong>HTML, JavaScript, CSS</strong> e ASP per poi passare &mdash; con l'arrivo della versione 1.0 del .NET Framework &mdash; ad <strong>ASP.NET</strong> e <strong>C#</strong>, tecnologie che seguo tutt'oggi con grande interesse e che utilizzo come principale piattaforma di sviluppo lato server.<br>Fin dai loro esordi ho abbracciato i nuovi <strong>standard per il Web</strong> (HTML5, CSS3 e ECMAScript) e adottato librerie e framework per lo sviluppo di applicazioni caratterizzate da interfacce moderne, fluide, accattivanti e dinamiche.</p>
-            <p>Nella mia esperienza lavorativa ho avuto modo di confrontarmi con <strong>svariate tipologie di progetto</strong> (e-commerce, corporate web site, social network, intranet, extranet, app native/ibride per mobile, PWA, IoT, ecc.) <strong>e di architettura</strong> (data-centric, distributed application, serverless e service oriented architecture).</p>
-            <h3>Pubblicazioni</h3>
-            <p>Sono stato <strong>docente in corsi di formazione</strong> superiore e per aziende e ho all'attivo diversi <strong>progetti editoriali</strong> con case editrici come <a href="https://www.hoepli.it/" target="_blank">Hoepli</a> e <a href="https://www.manning.com/" target="_blank">Manning Publications</a>, sia come autore che come revisore.</p>
-            <ul class="books">
-                <li><img src="/img/cover-html5-espresso.jpg" alt="HTML5 con CSS3 e ECMAScript 5 - Espresso" title="Autore di 'HTML5 con CSS3 e ECMAScript 5 - Espresso'"></li>
-                <li><img src="/img/cover-aspnet-in-practice.jpg" alt="ASP.NET 4.0 in Practice" title="Technical Proofreader di 'ASP.NET 4.0 in Practice'"></li>
-                <li><img src="/img/cover-aspnet4.jpg" alt="ASP.NET 4.0 in C# e VB" title="Revisore della versione italiana di 'ASP.NET 4.0 in C# e VB'"></li>
-                <li><img src="/img/cover-csharp4.jpg" alt="C# 4 E .NET 4" title="Revisore della versione italiana di 'C# 4 E .NET 4'"></li>                
-            </ul>
-            <p>Come membro dello <a href="http://www.aspitalia.com/autori/Matteo_Casati.aspx" target="_blank" rel="me">staff di ASPItalia.com</a> e primo Content Manager di <a href="http://www.html5italia.com/" target="_blank">HTML5Italia.com</a> ho pubblicato <strong>decine di articoli e script</strong> e offerto il mio contributo partecipando ai <strong>forum</strong> della community.</p>
+<!-- Skills -->
+<section id="skills">
+  <div class="container">
+    <div class="section-label reveal" data-i18n="skills.label">02. Skills</div>
+    <h2 class="reveal" data-i18n="skills.h2">What I work with</h2>
+    <div class="skill-areas">
+      <div class="skill-card reveal">
+        <div class="skill-card-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="18" rx="2"/>
+            <line x1="2" y1="9" x2="22" y2="9"/>
+            <circle cx="5.5" cy="6" r="0.8" fill="currentColor" stroke="none"/>
+            <circle cx="8.5" cy="6" r="0.8" fill="currentColor" stroke="none"/>
+            <circle cx="11.5" cy="6" r="0.8" fill="currentColor" stroke="none"/>
+          </svg>
         </div>
-    </section>
+        <h3 data-i18n="s1.title">Frontend, Mobile &amp; UX</h3>
+        <p data-i18n="s1.desc">HTML5, CSS3, JavaScript, TypeScript, Vue, Angular, React, PWA, native and hybrid mobile apps — with a focus on UI design, usability, accessibility and mobile-first responsive design.</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="8" rx="2"/>
+            <rect x="2" y="14" width="20" height="8" rx="2"/>
+            <circle cx="6" cy="6" r="1" fill="currentColor" stroke="none"/>
+            <circle cx="6" cy="18" r="1" fill="currentColor" stroke="none"/>
+            <line x1="10" y1="6" x2="14" y2="6"/>
+            <line x1="10" y1="18" x2="14" y2="18"/>
+          </svg>
+        </div>
+        <h3 data-i18n="s2.title">Backend &amp; Cloud</h3>
+        <p data-i18n="s2.desc">.NET / .NET Core, C#, REST API, Docker, Kubernetes, AWS, Azure, Serverless, SOA — scalable on-premise and cloud architectures.</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <ellipse cx="12" cy="5" rx="9" ry="3"/>
+            <path d="M3 5v5c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/>
+            <path d="M3 10v5c0 1.66 4.03 3 9 3s9-1.34 9-3v-5"/>
+          </svg>
+        </div>
+        <h3 data-i18n="s3.title">Database &amp; Data</h3>
+        <p data-i18n="s3.desc">MySQL, MS SQL Server, NoSQL, ORM, data-centric architectures, integration and data exchange between heterogeneous platforms.</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="7" y="7" width="10" height="10" rx="1.5"/>
+            <line x1="7" y1="9.5" x2="3" y2="9.5"/>
+            <line x1="7" y1="14.5" x2="3" y2="14.5"/>
+            <line x1="17" y1="9.5" x2="21" y2="9.5"/>
+            <line x1="17" y1="14.5" x2="21" y2="14.5"/>
+            <line x1="9.5" y1="7" x2="9.5" y2="3"/>
+            <line x1="14.5" y1="7" x2="14.5" y2="3"/>
+            <line x1="9.5" y1="17" x2="9.5" y2="21"/>
+            <line x1="14.5" y1="17" x2="14.5" y2="21"/>
+          </svg>
+        </div>
+        <h3 data-i18n="s4.title">IoT &amp; Industry 4.0</h3>
+        <p data-i18n="s4.desc">MES, data collection from sensors and PLCs, S7, MQTT, Modbus, OPC UA protocols, performance analysis and predictive maintenance.</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="9" y1="6" x2="20" y2="6"/>
+            <line x1="9" y1="12" x2="20" y2="12"/>
+            <line x1="9" y1="18" x2="20" y2="18"/>
+            <polyline points="4 6 5 7 7 5"/>
+            <polyline points="4 12 5 13 7 11"/>
+            <polyline points="4 18 5 19 7 17"/>
+          </svg>
+        </div>
+        <h3 data-i18n="s5.title">Method &amp; Process</h3>
+        <p data-i18n="s5.desc">Agile, Scrum, DevOps, project management, requirements analysis, problem solving, virtualisation and containerisation.</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="4" r="2"/>
+            <circle cx="4" cy="19" r="2"/>
+            <circle cx="20" cy="19" r="2"/>
+            <circle cx="12" cy="13" r="2"/>
+            <line x1="12" y1="6" x2="12" y2="11"/>
+            <line x1="10.3" y1="14.3" x2="5.7" y2="17.7"/>
+            <line x1="13.7" y1="14.3" x2="18.3" y2="17.7"/>
+            <line x1="10.8" y1="5" x2="5.2" y2="18"/>
+            <line x1="13.2" y1="5" x2="18.8" y2="18"/>
+            <line x1="6" y1="19" x2="18" y2="19"/>
+          </svg>
+        </div>
+        <h3 data-i18n="s6.title">AI &amp; Automation</h3>
+        <p data-i18n="s6.desc">LLMs, prompt engineering, AI-assisted development, integration of AI APIs (OpenAI, Anthropic) into applications, RAG pipelines, AI agents and automation of business processes with generative AI.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section class="contacts">
-        <div class="content">
-            <h2>Contatti</h2>
-            <p>Per maggiori informazioni e magari prendere un caffè insieme, contattami via <a href="&#109;&#097;&#105;&#108;&#116;&#111;:info&#064;mcasati&#46;com" class="email">email</a> o <a href="skype:m.casati?call" class="skype">Skype</a> oppure attraverso i principali social network:</p>
-            <ul class="social">
-                <li><a href="https://www.instagram.com/m_casati/" class="instagram" rel="me">Instagram</a></li>
-                <li><a href="https://www.linkedin.com/in/casati/" class="linkedin" rel="me">LinkedIn</a></li>                    
-                <li><a href="https://twitter.com/m_casati/" class="twitter" rel="me">Twitter</a></li>
-                <li><a href="https://www.facebook.com/matteo.casati" class="facebook" rel="me">Facebook</a></li>
-            </ul>
-        </div>
-    </section>
+<!-- Experience -->
+<section id="experience">
+  <div class="container">
+    <div class="section-label reveal" data-i18n="exp.label">03. Experience</div>
+    <h2 class="reveal" data-i18n="exp.h2">What I've built</h2>
+    <div class="exp-list">
+      <div class="exp-item reveal">
+        <h3 data-i18n="e1.title">Business Digitalisation</h3>
+        <p data-i18n="e1.desc">Analysis and development of tailored solutions for the digital transformation of internal business processes.</p>
+      </div>
+      <div class="exp-item reveal">
+        <h3 data-i18n="e2.title">MES — Manufacturing Execution System</h3>
+        <p data-i18n="e2.desc">Systems for real-time control and management of industrial production.</p>
+      </div>
+      <div class="exp-item reveal">
+        <h3 data-i18n="e3.title">IoT &amp; Industry 4.0</h3>
+        <p data-i18n="e3.desc">Data collection from sensors and PLCs, performance analysis, predictive maintenance algorithms to reduce downtime.</p>
+      </div>
+      <div class="exp-item reveal">
+        <h3 data-i18n="e4.title">Integration Systems</h3>
+        <p data-i18n="e4.desc">Data exchange architectures between heterogeneous systems: ERP, CRM, cloud platforms and legacy applications.</p>
+      </div>
+      <div class="exp-item reveal">
+        <h3 data-i18n="e5.title">Web &amp; Mobile App</h3>
+        <p data-i18n="e5.desc">Intranets, extranets, e-commerce, corporate websites, PWAs, native and hybrid apps built to the client's specific needs.</p>
+      </div>
+      <div class="exp-item reveal">
+        <h3 data-i18n="e6.title">Training &amp; Publishing</h3>
+        <p data-i18n="e6.desc">Lecturer in higher education and corporate training courses, with several editorial projects with publishers such as <a href="https://www.hoepli.it/" target="_blank" rel="noopener">Hoepli</a> and <a href="https://www.manning.com/" target="_blank" rel="noopener">Manning Publications</a>, as both author and technical reviewer.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <footer>          
-        <div class="content">  
-            <p>&copy; Copyright Matteo Casati</p>
-            <p>Partita IVA: IT 06568450966</p>                
-            <p><em>Tutti i marchi sono dei rispettivi proprietari.</em></p>  
-        </div>
-    </footer>
+<!-- Contact -->
+<section id="contact">
+  <div class="container">
+    <div class="section-label reveal" style="justify-content:center" data-i18n="contact.label">04. Contact</div>
+    <h2 class="reveal" data-i18n="contact.h2">Get in touch</h2>
+    <p class="reveal" data-i18n="contact.intro">Have a project in mind or just want to chat?</p>
+    <div class="contact-links reveal">
+      <a href="&#109;&#097;&#105;&#108;&#116;&#111;:info&#064;mcasati&#46;com" class="contact-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/>
+        </svg>
+        Email
+      </a>
+      <a href="https://www.linkedin.com/in/casati/" target="_blank" rel="noopener me" class="contact-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/>
+        </svg>
+        LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p data-i18n="footer.vat">&copy; Copyright Matteo Casati &mdash; VAT no. IT 06568450966</p>
+  <p data-i18n="footer.legal">All trademarks are the property of their respective owners. This site does not use profiling cookies.</p>
+</footer>
+
+<script src="/res/hp.js"></script>
 
 </body>
 </html>
